@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aarunya</string>
+    <string name="email_hint">ईमेल</string>
+    <string name="pass_hint">"पारण शब्द "</string>
+    <string name="login_btn_text">"लॉग इन करें "</string>
+    <string name="login_reg_btn_text">"नया खाता बनाएँ "</string>
+    <string name="select_language">"भाषा चुनिए "</string>
+</resources>
