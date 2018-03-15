@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Aarunya</string>
+    <string name="consumer">consumer</string>
+    <string name="conenquiry">Enquiry</string>
+    <string name="concomplain">complain</string>
+    <string name="conemployment">employment</string>
+    <string name="confaq">faq</string>
+    <string name="confarmingnews">farming news</string>
+    <string name="conweather">weather reports</string>
+    <string name="congovtoffers">govt offers</string>
+    <string name="conbuy">buy</string>
+    <string name="conmandi">Mandi Rates</string>
+    <string name="commodity">Commodity</string>
+    <string name="br">Basic Rate</string>
+    <string name="quantity">Quantity</string>
+    <string name="rate">Rate</string>
+    <string name="producers">producers</string>
+    <string-array name="commodities">
+        <item>Potato</item>
+        <item>Onion</item>
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Garlic</item>
+        <item>Ginger</item>
+    </string-array>
 </resources>
