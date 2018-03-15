@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Aarunya</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="complain">complain</string>
+    <string name="employment">employment</string>
+    <string name="faq">faq</string>
+    <string name="farmingnews">farming news</string>
+    <string name="weather">weather reports</string>
+    <string name="govtoffers">govt offers</string>
+    <string name="sell">sell</string>
+    <string name="mandi">Mandi Rates</string>
+    <string name="commodity">Commodity</string>
+    <string name="br">Basic Rate</string>
+    <string name="quantity">Quantity</string>
+    <string name="rate">Rate</string>
+    <string name="producers">producers</string>
+    <string-array name="commodities">
+        <item>Potato</item>
+        <item>Onion</item>
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Garlic</item>
+        <item>Ginger</item>
+    </string-array>
 </resources>
