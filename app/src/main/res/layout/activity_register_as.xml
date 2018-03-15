@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunya.aarunya.LanguageActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:gravity="center"
+        android:textColor="#FFEBEE"
+        android:textSize="20sp"
+        android:text="@string/register_as"
+        android:background="#2979FF"/>
+
+
+        <Button
+            android:id="@+id/register_as_producer"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/producer" />
+    <Button
+        android:id="@+id/register_as_buyer"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buyer" />
+
+    <Button
+        android:id="@+id/register_as_transporter"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transporter" />
+
+</LinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.arunya.aarunya.NewRegistrationTransporterActivity">
+
+        <TextView
+            android:id="@+id/register_as_producer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:text="@string/register_as_transporter" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/name_text" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dob_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/dob_text" />
+
+        <EditText
+            android:id="@+id/dob_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/dob_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/state_text" />
+
+        <Spinner
+            android:id="@+id/state_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            android:prompt="@string/state_spinner"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/district_text"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/district_text" />
+
+
+        <Spinner
+            android:id="@+id/district_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            android:prompt="@string/district_spinner"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/address_text" />
+
+
+        <EditText
+            android:id="@+id/address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/address_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/phone_text" />
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/phone_edit"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/uid_text"
+            android:layout_width="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:text="@string/uid_text" />
+
+        <EditText
+            android:id="@+id/uid_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/uid_edit"
+            android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/driver_license_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:text="@string/driver_license_number_text" />
+
+    <EditText
+        android:id="@+id/driver_license_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/driver_license_number_edit"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/vehicle_registration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:text="@string/vehicle_registration_text" />
+
+    <EditText
+        android:id="@+id/vehicle_registration_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/vehicle_registration_edit"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/vehicle_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:text="@string/vehicle_type_text" />
+
+    <Spinner
+        android:id="@+id/vehicle_type_edit"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:prompt="@string/vehicle_type_spinner"
+        android:spinnerMode="dialog"
+        android:textSize="16sp" />
+
+    <TextView
+    android:id="@+id/transport_capacity_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:paddingTop="16dp"
+    android:text="@string/transport_capacity_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/vehicle_capacity_edit"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="@string/transport_capacity_edit"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/vehicle_capacity_unit_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:prompt="@string/transport_capacity_unit_edit"
+            android:spinnerMode="dialog"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price_km_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:text="@string/price_km_text" />
+
+    <EditText
+        android:id="@+id/price_km_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/price_km_edit"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:text="@string/submit_btn" />
+
+</LinearLayout>
+</ScrollView>

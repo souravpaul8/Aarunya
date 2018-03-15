@@ -16,10 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".producer" />
-        <activity android:name=".sell" />
-        <activity android:name=".prod_faq" />
-        <activity android:name=".prod_complain"></activity>
     </application>
 
 </manifest>
