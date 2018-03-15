@@ -105,7 +105,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
+        android:id="@+id/google_sign_in"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="124dp"

@@ -14,9 +14,6 @@ public class UserInformation {
     private String phone_num;
     private String aadhaar;
 
-    public UserInformation() {
-
-    }
 
     public UserInformation(String name, String dob, String address,
                            String phone_num, String aadhaar) {

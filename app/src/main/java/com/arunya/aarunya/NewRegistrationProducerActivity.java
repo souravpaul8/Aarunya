@@ -9,9 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class NewRegistrationActivity extends AppCompatActivity {
+public class NewRegistrationProducerActivity extends AppCompatActivity {
 
     private static final String TAG = "AddToDatabase";
 
@@ -42,7 +40,7 @@ public class NewRegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_registration);
+        setContentView(R.layout.activity_new_registration_producer);
         btnSubmit = (Button) findViewById(R.id.submit_btn);
         mName = (EditText) findViewById(R.id.name_edit);
         mDob = (EditText) findViewById(R.id.dob_edit);
@@ -51,7 +49,8 @@ public class NewRegistrationActivity extends AppCompatActivity {
         //mState = (Spinner) findViewById(R.id.state_edit);
         //mDistrict = (Spinner) findViewById(R.id.district_edit);
         mPhoneNum = (EditText) findViewById(R.id.phone_edit);
-        mRegisterAs =(RadioGroup) findViewById(R.id.radio_group_register_as);
+
+
         //declare the database reference object. This is what we use to access the database.
         //NOTE: Unless you are signed in, this will not be useable.
         mAuth = FirebaseAuth.getInstance();
@@ -106,7 +105,6 @@ public class NewRegistrationActivity extends AppCompatActivity {
                 String PhoneNum = mPhoneNum.getText().toString();
                 //String state = mState.getSelectedItem().toString();
                 //String district = mDistrict.getSelectedItem().toString();
-                String registerAs = ((RadioButton)findViewById(mRegisterAs.getCheckedRadioButtonId())).getText().toString();
 
 
                 Log.d(TAG, "onClick: Attempting to submit to database: \n" +
@@ -122,7 +120,7 @@ public class NewRegistrationActivity extends AppCompatActivity {
                 //handle the exception if the EditText fields are null
                 if(!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")){
                     UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar);
-                    myRef.child("users").child(registerAs).child(userID).setValue(userInformation);
+                    myRef.child("Users").child("Producer").child(userID).setValue(userInformation);
                     toastMessage("New Information has been saved.");
                     mName.setText("");
                     mDob.setText("");
@@ -131,20 +129,18 @@ public class NewRegistrationActivity extends AppCompatActivity {
                     mPhoneNum.setText("");
 
 
-                    if (registerAs.equals("Producer") || registerAs.equals("Buyer"))
-                    {
-                        Intent afterSubmit = new Intent(NewRegistrationActivity.this, LanguageActivity.class);
+                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, LanguageActivity.class);
                         startActivity(afterSubmit);
-                    }
-                    else {
-                        Intent afterSubmit = new Intent(NewRegistrationActivity.this, TransporterExtraRegisterActivity.class);
-                        startActivity(afterSubmit);
-                    }
                 }else{
                     toastMessage("Fill out all the fields");
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
     }
 
     @Override

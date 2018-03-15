@@ -21,9 +21,12 @@
     <string name="uid_text">Aadhaar Number</string>
     <string name="uid_edit">Enter Aadhaar Number</string>
     <string name="register_as">Register As:</string>
-    <string name="register_as_producer">Producer</string>
-    <string name="register_as_buyer">Buyer</string>
-    <string name="register_as_transporter">Transporter</string>
+    <string name="producer">Producer</string>
+    <string name="buyer">Buyer</string>
+    <string name="transporter">Transporter</string>
+    <string name="register_as_producer">Register as Producer</string>
+    <string name="register_as_buyer">Register as Buyer</string>
+    <string name="register_as_transporter">Register as Transporter</string>
     <string name="submit_btn">Submit</string>
     <string name="transporter_detail">Transport Details</string>
     <string name="driver_license_number_text">Driving License Number</string>
