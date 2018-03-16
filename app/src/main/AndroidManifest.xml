@@ -24,7 +24,8 @@
         <activity android:name=".NewRegistrationTransporterActivity" />
         <activity android:name=".RegisterPasswordActivity" />
         <activity android:name=".RegisterAsActivity" />
-        <activity android:name=".NewRegistrationConsumerActivity"></activity>
+        <activity android:name=".NewRegistrationConsumerActivity" />
+        <activity android:name=".ConsumerBuyActivity"></activity>
     </application>
 
 </manifest>

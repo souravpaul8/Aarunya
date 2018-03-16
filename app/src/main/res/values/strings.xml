@@ -43,6 +43,10 @@
     <string name="pass_confirm_hint">Confirm Password</string>
     <string name="register_btn">Register</string>
     <string name="reg_login_btn_text">Have an Account? Login</string>
-
+    <string name="crop_text">Crop</string>
+    <string name="quantity_text">Quantity</string>
+    <string name="price_text">Price</string>
+    <string name="buy_btn">Buy</string>
+    <string name="chat_btn">Chat</string>
 
 </resources>

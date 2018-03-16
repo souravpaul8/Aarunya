@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="154dp"
-        android:text="@string/producers"
+        android:text="@string/producer"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="69dp" />
 </RelativeLayout>
