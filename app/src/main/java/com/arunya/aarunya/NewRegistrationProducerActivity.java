@@ -7,9 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,7 +29,7 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
 
     private Button btnSubmit;
     private EditText mName,mDob,mAddress,mPhoneNum,mAadhaar;
-    //private Spinner mState,mDistrict;
+    private Spinner mState,mDistrict;
     private String stateText,districtText;
     private RadioGroup mRegisterAs;
     private String userID;
@@ -46,8 +49,53 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
         mDob = (EditText) findViewById(R.id.dob_edit);
         mAddress = (EditText) findViewById(R.id.address_edit);
         mAadhaar = (EditText) findViewById(R.id.uid_edit);
-        //mState = (Spinner) findViewById(R.id.state_edit);
-        //mDistrict = (Spinner) findViewById(R.id.district_edit);
+        mState = (Spinner) findViewById(R.id.state_edit);
+        mDistrict = (Spinner) findViewById(R.id.district_edit);
+        ArrayAdapter<CharSequence> ada = ArrayAdapter.createFromResource(this, R.array.india_states, android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> ada0 =ArrayAdapter.createFromResource(this,R.array.jharkhand,android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> ada1 =ArrayAdapter.createFromResource(this,R.array.bihar,android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> ada2 =ArrayAdapter.createFromResource(this,R.array.gujrat,android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> ada3 =ArrayAdapter.createFromResource(this,R.array.rajasthan,android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> ada4 =ArrayAdapter.createFromResource(this,R.array.tamilnadu,android.R.layout.simple_spinner_item);
+        ada.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ada0.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ada1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ada2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ada3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        ada4.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        mState.setAdapter(ada);
+        mState.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Spinner mState= (Spinner) findViewById(R.id.state_edit);
+                String word = mState.getItemAtPosition(i).toString();
+                if (word.equals(word)) {
+ mDistrict =(Spinner)findViewById(R.id.district_edit);
+                    switch(i)
+                    {
+                        case 0:mDistrict.setAdapter(ada0);
+                            break;
+                        case 1:mDistrict.setAdapter(ada1);
+                            break;
+                        case 2:mDistrict.setAdapter(ada2);
+                            break;
+                        case 3:mDistrict.setAdapter(ada3);
+                            break;
+                        case 4:mDistrict.setAdapter(ada4);
+                            break;
+
+
+                    }
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
         mPhoneNum = (EditText) findViewById(R.id.phone_edit);
 
 
@@ -103,16 +151,16 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                 String Address = mAddress.getText().toString();
                 String Aadhaar = mAadhaar.getText().toString();
                 String PhoneNum = mPhoneNum.getText().toString();
-                //String state = mState.getSelectedItem().toString();
-                //String district = mDistrict.getSelectedItem().toString();
+                String state = mState.getSelectedItem().toString();
+                String district = mDistrict.getSelectedItem().toString();
 
 
                 Log.d(TAG, "onClick: Attempting to submit to database: \n" +
                         "Name: " + Name + "\n" +
                         "DOB: " + DOB + "\n" +
                         "Address: " + Address + "\n" +
-                        //"District: " + district + "\n" +
-                        //"State: " + state + "\n" +
+                        "District: " + district + "\n" +
+                        "State: " + state + "\n" +
                         "Aadhaar Number: " + Aadhaar + "\n" +
                         "Phone number: " + PhoneNum + "\n"
                 );
@@ -129,7 +177,7 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                     mPhoneNum.setText("");
 
 
-                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, LanguageActivity.class);
+                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, consumer.class);
                         startActivity(afterSubmit);
                 }else{
                     toastMessage("Fill out all the fields");
@@ -164,7 +212,9 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
      */
     private void toastMessage(String message){
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+
     }
+
 
 
 }

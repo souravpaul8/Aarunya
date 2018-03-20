@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".NewRegistrationProducerActivity" />
+        <activity android:name=".NewRegistrationTransporterActivity" />
+        <activity android:name=".RegisterPasswordActivity" />
+        <activity android:name=".consumer" />
+        <activity android:name=".buy" />
+
+        <activity android:name=".RegisterAsActivity" />
+        <activity android:name=".NewRegistrationConsumerActivity"></activity>
     </application>
 
 </manifest>
