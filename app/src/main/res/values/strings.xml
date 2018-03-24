@@ -43,10 +43,27 @@
     <string name="pass_confirm_hint">Confirm Password</string>
     <string name="register_btn">Register</string>
     <string name="reg_login_btn_text">Have an Account? Login</string>
+    <string name="farmer_posts">Farmer's Posts</string>
     <string name="crop_text">Crop</string>
     <string name="quantity_text">Quantity</string>
     <string name="price_text">Price</string>
     <string name="buy_btn">Buy</string>
     <string name="chat_btn">Chat</string>
+    <string name="trans_view">View Assignments</string>
+    <string name="trans_news">News</string>
+    <string name="trans_weat">Weather Report</string>
+    <string name="trans_helpline">Helpline</string>
+    <string name="trans_hist">History</string>
+    <string name="conf">Email</string>
+    <string name="trans_contact">Contact</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="distance_text">Distance</string>
+    <string name="total_payment_text">Total Payment</string>
+    <string name="route_btn">Route</string>
+    <string name="contact_btn">Contact</string>
+    <string name="transport_assignments">Transport Assignments</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="estimated_time_text">Estimated Time</string>
 
 </resources>

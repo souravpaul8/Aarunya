@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.arunya.aarunya.TransporterHomeActivity">
+
+    <Button
+        android:id="@+id/view_assignment"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/trans_view"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/view_news"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/trans_news"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/view_weather"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/trans_weat"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/view_helpline"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/trans_helpline"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/view_history"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/trans_hist"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+
+    </LinearLayout>

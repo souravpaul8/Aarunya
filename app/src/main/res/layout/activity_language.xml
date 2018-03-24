@@ -32,15 +32,16 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="English" />
-    <RadioButton
-        android:id="@+id/hindi"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:text="Hindi"/>
+
+        <RadioButton
+            android:id="@+id/hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Hindi" />
 
     </RadioGroup>
 

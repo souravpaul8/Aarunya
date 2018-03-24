@@ -1,5 +1,6 @@
 package com.arunya.aarunya;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -150,7 +151,7 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                     mPricePerKm.setText("");
 
 
-                        Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, LanguageActivity.class);
+                        Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, TransporterHomeActivity.class);
                         startActivity(afterSubmit);
 
                 }else{

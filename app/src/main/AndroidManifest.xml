@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAAkxQxez9xr8qUNoFvZmWxB3iFooz-wcc" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +29,15 @@
         <activity android:name=".RegisterPasswordActivity" />
         <activity android:name=".RegisterAsActivity" />
         <activity android:name=".NewRegistrationConsumerActivity" />
-        <activity android:name=".ConsumerBuyActivity"></activity>
+        <activity android:name=".ConsumerBuyActivity" />
+        <activity android:name=".trans_open" />
+        <activity android:name=".trans_view" />
+        <activity android:name=".TransporterHomeActivity" />
+        <activity android:name=".TransporterNewsActivity" />
+        <activity android:name=".TransporterViewAssignmentActivity" />
+        <activity android:name=".TransporterConfirmActivity" />
+        <activity android:name=".TransporterChooseActionActivity" />
+        <activity android:name=".TransporterContactActivity"></activity>
     </application>
 
 </manifest>
