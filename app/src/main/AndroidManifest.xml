@@ -34,7 +34,7 @@
         <activity android:name=".MandiRate" />
         <activity android:name=".Government_schemes" />
         <activity android:name=".weather" />
-        <activity android:name=".chat_activity">
+        <activity android:name=".chat_activity"/>
         <activity android:name=".LoginActivity" />
         <activity android:name=".LanguageActivity" />
         <activity android:name=".NewRegistrationProducerActivity" />
@@ -48,7 +48,7 @@
         <activity android:name=".TransporterViewAssignmentActivity" />
         <activity android:name=".TransporterConfirmActivity" />
         <activity android:name=".TransporterChooseActionActivity" />
-        <activity android:name=".TransporterContactActivity"></activity>
+        <activity android:name=".TransporterContactActivity"/>
     </application>
 
 </manifest>
