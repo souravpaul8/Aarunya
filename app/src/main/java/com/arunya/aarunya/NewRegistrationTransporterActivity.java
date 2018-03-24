@@ -150,7 +150,7 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                     mPricePerKm.setText("");
 
 
-                        Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, LanguageActivity.class);
+                    Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, TransporterHomeActivity.class);
                         startActivity(afterSubmit);
 
                 }else{
