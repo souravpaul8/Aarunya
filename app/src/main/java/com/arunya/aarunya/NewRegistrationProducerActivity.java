@@ -129,7 +129,7 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                     mPhoneNum.setText("");
 
 
-                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, LanguageActivity.class);
+                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, producer.class);
                         startActivity(afterSubmit);
                 }else{
                     toastMessage("Fill out all the fields");

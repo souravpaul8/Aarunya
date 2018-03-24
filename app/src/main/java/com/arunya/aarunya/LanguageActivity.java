@@ -1,11 +1,14 @@
 package com.arunya.aarunya;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 
 import java.util.Locale;
@@ -16,6 +19,7 @@ public class LanguageActivity extends AppCompatActivity {
     // these two variables will be used by SharedPreferences
     private static final String FILE_NAME = "file_lang"; // preference file name
     private static final String KEY_LANG = "key_lang"; // preference key
+    private Button next_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,17 @@ public class LanguageActivity extends AppCompatActivity {
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
+        next_btn = (Button) findViewById(R.id.next);
+        next_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openprodactivity();
+            }
+        });
+    }
+    public void openprodactivity(){
+        Intent in = new Intent(this,producer.class);
+        startActivity(in);
     }
 
 
@@ -75,6 +90,7 @@ public class LanguageActivity extends AppCompatActivity {
 
         if(englishRadioButton.isChecked())
             saveLanguage("en");
+
         else if(hindiRadioButton.isChecked())
             saveLanguage("hi");
         return true;

@@ -1,5 +1,72 @@
 <resources>
     <string name="app_name">Aarunya</string>
+    <string name="email_hint">Email</string>
+    <string name="pass_hint">Password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="login_reg_btn_text">Create a New Account</string>
+    <string name="select_language">Select Language</string>
+    <string name="register">Register</string>
+    <string name="name_text">Name</string>
+    <string name="name_edit">Enter Name</string>
+    <string name="dob_text">D.O.B.</string>
+    <string name="dob_edit">Enter Date of Birth</string>
+    <string name="state_text">State</string>
+    <string name="state_spinner">Select State</string>
+    <string name="district_text">District</string>
+    <string name="district_spinner">Select District</string>
+    <string name="address_text">Address</string>
+    <string name="address_edit">Enter Address</string>
+    <string name="phone_text">Mobile Number</string>
+    <string name="phone_edit">Enter Mobile Number</string>
+    <string name="uid_text">Aadhaar Number</string>
+    <string name="uid_edit">Enter Aadhaar Number</string>
+    <string name="register_as">Register As:</string>
+    <string name="register_as_producer">Producer</string>
+    <string name="register_as_buyer">Buyer</string>
+    <string name="register_as_transporter">Transporter</string>
+    <string name="submit_btn">Submit</string>
+    <string name="transporter_detail">Transport Details</string>
+    <string name="driver_license_number_text">Driving License Number</string>
+    <string name="driver_license_number_edit">Enter Driving License Number</string>
+    <string name="vehicle_registration_text">Vehicle Registration Number</string>
+    <string name="vehicle_registration_edit">Enter Vehicle Registration Number</string>
+    <string name="vehicle_type_text">Vehicle Type</string>
+    <string name="vehicle_type_spinner">Select Type of Vehicle</string>
+    <string name="transport_capacity_text">Vehicle Capacity</string>
+    <string name="transport_capacity_edit">Enter Vehicle Capacity</string>
+    <string name="transport_capacity_unit_edit">Enter Vehicle Capacity Unit</string>
+    <string name="price_km_text">Price per KM</string>
+    <string name="price_km_edit">Enter Price per KM</string>
+    <string name="pass_confirm_hint">Confirm Password</string>
+    <string name="register_btn">Register</string>
+    <string name="reg_login_btn_text">Have an Account? Login</string>
+    <string name="producer">Producer</string>
+    <string name="buyer">Buyer</string>
+    <string name="transporter">Transporter</string>
+
+
+    <string name="pro_enquiry">Enquiry</string>
+    <string name="pro_complain">complain</string>
+    <string name="pro_employment">employment</string>
+    <string name="pro_faq">faq</string>
+    <string name="pro_farmingnews">farming news</string>
+    <string name="pro_weather">weather reports</string>
+    <string name="pro_govtoffers">govt offers</string>
+    <string name="pro_sell">sell</string>
+    <string name="pro_mandi">Mandi Rates</string>
+    <string name="pro_commodity">Commodity</string>
+    <string name="pro_br">Basic Rate</string>
+    <string name="pro_quantity">Quantity</string>
+    <string name="pro_rate">Rate</string>
+    <string name="pro_producers">producers</string>
+    <string-array name="pro_commodities">
+        <item>Potato</item>
+        <item>Onion</item>
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Garlic</item>
+        <item>Ginger</item>
+    </string-array>
     <string name="consumer">consumer</string>
     <string name="conenquiry">Enquiry</string>
     <string name="concomplain">complain</string>
@@ -23,4 +90,9 @@
         <item>Garlic</item>
         <item>Ginger</item>
     </string-array>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="prod_img">Select Image of crop</string>
+
+
 </resources>

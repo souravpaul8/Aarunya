@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arunya.aarunya">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".AppLifeApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,8 +21,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".producer" />
+        <activity android:name=".sell" />
+        <activity android:name=".NewRegistrationConsumerActivity" />
+        <activity android:name=".NewRegistrationProducerActivity" />
+        <activity android:name=".NewRegistrationTransporterActivity" />
         <activity android:name=".buy" />
-        <activity android:name=".consumer"></activity>
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".prod_complain" />
+        <activity android:name=".prod_faq" />
+        <activity android:name=".RegisterAsActivity" />
+        <activity android:name=".RegisterPasswordActivity" />
+        <activity android:name=".news" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Support" />
+        <activity android:name=".Enquiry" />
+        <activity android:name=".MandiRate" />
+        <activity android:name=".Government_schemes" />
+        <activity android:name=".weather" />
+        <activity android:name=".chat_activity"></activity>
     </application>
 
 </manifest>
