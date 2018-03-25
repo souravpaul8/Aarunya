@@ -75,7 +75,7 @@
     <string name="pro_sell">sell</string>
     <string name="pro_mandi">Mandi Rates</string>
     <string name="pro_commodity">Commodity</string>
-    <string name="pro_br">Basic Rate</string>
+    <string name="pro_br">Basic Rate per kg (in Rs.)</string>
     <string name="pro_quantity">Quantity</string>
     <string name="pro_rate">Rate</string>
     <string name="pro_producers">producers</string>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "729998424935-9n7gid920lqvs3gnt9jvaufv4h549ns4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arunya.aarunya",
+            "certificate_hash": "77f4839f7b91576c17cfa21cf2d33c6b1d1792d5"
+          }
+        },
+        {
           "client_id": "729998424935-gi2qmrgqj037on0pnfnepcjt7mq7lhtc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

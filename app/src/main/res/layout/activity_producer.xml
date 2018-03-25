@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunya.aarunya.producer"
+    android:id="@+id/drawer">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.arunya.aarunya.producer">
+
+
+        <Button
+            android:id="@+id/sell"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_sell"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="287dp" />
+
+        <Button
+            android:id="@+id/news"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sell"
+            android:layout_alignStart="@+id/sell"
+            android:layout_below="@+id/sell"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_farmingnews"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/news"
+            android:layout_alignStart="@+id/news"
+            android:layout_below="@+id/news"
+            android:layout_marginTop="22dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_weather"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="59dp"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/offers"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather"
+            android:layout_alignStart="@+id/weather"
+            android:layout_below="@+id/weather"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_govtoffers"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/mandirate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/offers"
+            android:layout_alignStart="@+id/offers"
+            android:layout_below="@+id/offers"
+            android:layout_marginTop="17dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_mandi"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="120dp"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/employment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mandirate"
+            android:layout_alignStart="@+id/mandirate"
+            android:layout_below="@+id/mandirate"
+            android:layout_marginTop="26dp"
+            android:background="@color/colorAccent"
+            android:text="@string/pro_employment"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#f6fdf5"
+            android:text="@string/pro_faq" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/faq"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:textColor="@android:color/background_light">
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="Location"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/complain"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/pro_complain"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/darkgray"
+        app:itemTextColor="@color/darkgray"
+        app:menu="@menu/navigation_menu"
+        android:id="@+id/navView">
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
