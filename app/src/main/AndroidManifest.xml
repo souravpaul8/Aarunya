@@ -44,7 +44,6 @@
         <activity android:name=".TransporterChooseActionActivity" />
         <activity android:name=".TransporterContactActivity"/>
         <activity android:name=".sell" />
-        <activity android:name=".buy" />
     </application>
 
 </manifest>

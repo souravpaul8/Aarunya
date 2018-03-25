@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "729998424935",
+    "firebase_url": "https://aarunya-6253b.firebaseio.com",
+    "project_id": "aarunya-6253b",
+    "storage_bucket": "aarunya-6253b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729998424935:android:5e78df8781d7b803",
+        "android_client_info": {
+          "package_name": "com.arunya.aarunya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729998424935-gi2qmrgqj037on0pnfnepcjt7mq7lhtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arunya.aarunya",
+            "certificate_hash": "e18c8939a2e86911708b40006b17dff1ed3b9fec"
+          }
+        },
+        {
+          "client_id": "729998424935-ctp56oc74dedu2oqj9viqk20ebqptlem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSFWk9ECmRMYXFibyI5CTd7v_jWeElQ48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729998424935-ctp56oc74dedu2oqj9viqk20ebqptlem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

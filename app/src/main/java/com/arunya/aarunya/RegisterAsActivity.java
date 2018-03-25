@@ -45,4 +45,3 @@ public class RegisterAsActivity extends AppCompatActivity {
         });
     }
 }
-
