@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arunya.aarunya.sell"
+    android:id="@+id/drawer">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.arunya.aarunya.sell">
+
+
+        <TextView
+            android:id="@+id/commodity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/qty"
+            android:layout_alignLeft="@+id/commodity"
+            android:layout_alignStart="@+id/commodity"
+            android:layout_marginBottom="32dp"
+            android:text="@string/pro_commodity"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <Spinner
+            android:id="@+id/commodity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/commodity"
+            android:layout_alignStart="@+id/commodity"
+            android:layout_below="@+id/commodity"
+            android:layout_marginTop="27dp"
+            android:text="Quantity (in Kg)"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/qty"
+            android:layout_alignStart="@+id/qty"
+            android:layout_below="@+id/qty"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/bas_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/quantity"
+            android:layout_alignStart="@+id/quantity"
+            android:layout_below="@+id/quantity"
+            android:layout_marginTop="35dp"
+            android:text="@string/pro_br"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <EditText
+            android:id="@+id/basicrate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bas_text"
+            android:layout_alignStart="@+id/bas_text"
+            android:layout_below="@+id/bas_text"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/img_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/basicrate"
+            android:layout_alignStart="@+id/basicrate"
+            android:layout_below="@+id/basicrate"
+            android:layout_marginTop="15dp"
+            android:text="@string/prod_img"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="submit"
+            android:textColor="@android:color/background_light" />
+
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/darkgray"
+        app:itemIconTint="@color/darkgray"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:id="@+id/navView">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

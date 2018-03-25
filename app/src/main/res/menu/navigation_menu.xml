@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/support"
+        android:title="Support"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/language"
+        android:title="Language"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/faq"
+        android:title="FAQ"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/enquiry"
+        android:title="Enquiry"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+</menu>
