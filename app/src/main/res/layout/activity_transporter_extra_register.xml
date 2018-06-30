@@ -54,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:maxLength="12"
             android:inputType="textPersonName"
             android:hint="@string/dob_edit"
             android:textSize="16sp" />
@@ -125,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:maxLength="10"
             android:inputType="phone"
             android:hint="@string/phone_edit"
             android:textSize="16sp" />
@@ -144,7 +146,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:maxLength="12"
+            android:inputType="phone"
             android:hint="@string/uid_edit"
             android:textSize="16sp" />
 
@@ -162,6 +165,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:maxLength="16"
         android:inputType="textPersonName"
         android:hint="@string/driver_license_number_edit"
         android:textSize="16sp" />
@@ -189,6 +193,7 @@
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:paddingTop="16dp"
+        android:maxLength="13"
         android:text="@string/vehicle_type_text" />
 
     <Spinner

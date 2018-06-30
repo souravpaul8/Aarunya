@@ -9,4 +9,7 @@
 
 
     <color name="whiteTransparentHalf">#80ffffff</color>
+    <color name="test1">#1ba727</color>
+    <color name="trans">#786F4E</color>
+    <color name="cons">#FF9800</color>
 </resources>

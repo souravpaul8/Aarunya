@@ -6,4 +6,210 @@
     <string name="login_btn_text">"लॉग इन करें "</string>
     <string name="login_reg_btn_text">"नया खाता बनाएँ "</string>
     <string name="select_language">"भाषा चुनिए "</string>
+    <string name="register">रजिस्टर</string>
+    <string name="name_text">नाम</string>
+    <string name="dob_text">जन्म की तारीख</string>
+    <string name="state_text">राज्य</string>
+    <string name="district_text">जिला</string>
+    <string name="address_text">पता</string>
+    <string name="phone_text">फ़ोन</string>
+    <string name="uid_text">आधार</string>
+    <string name="register_as">रजिस्टर के रूप में</string>
+    <string name="producer">उत्पादक</string>
+    <string name="buyer">क्रेता</string>
+    <string name="transporter">ट्रांसपोर्टर</string>
+    <string name="register_as_producer">निर्माता के रूप में रजिस्टर करें</string>
+    <string name="register_as_buyer">खरीदार के रूप में रजिस्टर करें</string>
+    <string name="register_as_transporter">ट्रांसपोर्टर के रूप में रजिस्टर करेंट्रांसपोर्टर के रूप में रजिस्टर करेंट्रांसपोर्टर के रूप में रजिस्टर ट्रांसपोर्टर के रूप में रजिस्टर करेंट्रांसपोर्टर के रूप में रजिस्टर करें</string>
+    <string name="submit_btn">जमा करें</string>
+    <string name="transporter_detail">ट्रांसपोर्टर का विवरण</string>
+    <string name="driver_license_number_text">चालक लाइसेंस</string>
+    <string name="vehicle_registration_text">वाहन पंजीकरण संख्या</string>
+    <string name="vehicle_type_text">वाहन का प्रकार</string>
+    <string name="transport_capacity_text">परिवहन क्षमता</string>
+    <string name="price_km_text">मूल्य प्रति किमी</string>
+    <string name="pass_confirm_hint">पासवर्ड संकेत</string>
+    <string name="register_btn">रजिस्टर</string>
+    <string name="reg_login_btn_text">लॉग इन करें</string>
+    <string name="farmer_posts">किसान के अपडेट</string>
+    <string name="crop_text">फ़सल</string>
+    <string name="quantity_text">मात्रा</string>
+    <string name="price_text">मूल्य</string>
+    <string name="buy_btn">खरीद</string>
+    <string name="chat_btn">बातचीत</string>
+    <string name="trans_view">असाइनमेंट देखें</string>
+    <string name="trans_news">समाचार</string>
+    <string name="trans_weat">मौसम की रिपोर्ट</string>
+    <string name="trans_helpline">हेल्पलाइन</string>
+    <string name="trans_hist">इतिहास</string>
+    <string name="conf">ईमेल</string>
+    <string name="trans_contact">संपर्क करें</string>
+    <string name="from_text">से</string>
+    <string name="to_text">तक</string>
+    <string name="distance_text">दूरी</string>
+    <string name="total_payment_text">कुल भुगतान</string>
+    <string name="route_btn">मार्ग</string>
+    <string name="contact_btn">संपर्क करें</string>
+    <string name="transport_assignments">परिवहन कार्य</string>
+    <string name="confirm_btn">पुष्टि करें</string>
+    <string name="estimated_time_text">अनुमानित समय</string>
+    <string name="pro_enquiry">जांच</string>
+    <string name="pro_complain">शिकायत</string>
+    <string name="pro_employment">रोज़गार</string>
+    <string name="pro_faq">सामान्य प्रश्न</string>
+    <string name="pro_farmingnews">कृषि समाचार</string>
+    <string name="pro_weather">मौसम</string>
+    <string name="pro_govtoffers">सरकार ऑफ़र करती है</string>
+    <string name="pro_sell">बेचे</string>
+    <string name="pro_mandi">मंडी दर</string>
+    <string name="pro_commodity">वस्तु</string>
+    <string name="pro_br">मूल दर</string>
+    <string name="pro_quantity">मात्रा</string>
+    <string name="pro_rate">" दर"</string>
+    <string name="pro_producers">उत्पादक</string>
+    <string name="consumer">उपभोक्ता</string>
+    <string name="conenquiry">जांच</string>
+    <string name="concomplain">शिकायत</string>
+    <string name="conemployment">रोज़गार</string>
+    <string name="confaq">सामान्य प्रश्न</string>
+    <string name="confarmingnews">कृषि समाचार</string>
+    <string name="conweather">मौसम खबर</string>
+    <string name="congovtoffers">सरकार ऑफ़र करती है</string>
+    <string name="conbuy">खरीदें</string>
+    <string name="conmandi">मंडी दर</string>
+    <string name="commodity">वस्तु</string>
+    <string name="br">मूल दर</string>
+    <string name="quantity">मात्रा</string>
+    <string name="rate">"दर "</string>
+    <string name="producers">उत्पादक</string>
+    <string name="open">खोलें</string>
+    <string name="close">बंद  करें</string>
+    <string name="prod_img">फसल की छवि चुनें</string>
+    <string name="enquiry_or_suggestion">पूछताछ या सुझाव</string>
+    <string name="fill_following_form">निंन प्रपत्र भरें</string>
+    <string name="name">नाम</string>
+    <string name="mail">नाम</string>
+
+    <string name="faqs_aarunya">पूछे जाने वाले प्रश्न-Aarunya</string>
+    <string name="who_all_can_register_on_aarunya"> Aarunya पर कौन पंजीकरण कर सकता है?</string>
+    <string name="one_may_register_as_producer_farmer_consumer_wholeseller_or_transporter_voter_id_card_no_is_must_for_registering_for_any_of_the_above_three_category_but_for_registering_as_a_transporter_driving_license_no_and_vehicle_registration_details_are_must">One may register as producer (farmer), consumer (wholeseller) or transporter. Voter ID card no. is must for registering for any of the above three category. But for registering as a transporter Driving License No. and Vehicle Registration Details are must.</string>
+    <string name="as_a_farmer_or_producer_why_should_i_sell_on_aarunya">* एक किसान या निर्माता के रूप में क्यों मुझे Aarunya पर बेचना चाहिए?</string>
+    <string name="it_will_enable_producer_farmers_and_consumer_to_directly_contact_each_other_for_maximum_profit_we_will_provide_with_the_strongest_platform_to_take_one_s_crop_all_over_the_country">it will enable producer (farmers) and consumer to directly contact each other for maximum profit. We will provide with the strongest platform to take one\'s crop all over the country.</string>
+    <string name="how_can_i_buy_on_aarunya">*How can i buy on Aarunya?</string>
+    <string name="steps_to_follow_register_yourself_as_consumer_search_for_the_crop_wanted_required_from_the_provided_list_enter_the_quantity_for_purchase_negotiate_with_the_producer_seller"><![CDATA[Steps to follow: > Register yourself as consumer. > Search for the crop wanted/required from the provided list. > Enter the quantity for purchase. > Negotiate with the producer/seller.]]></string>
+    <string name="who_decides_the_rate_of_the_crops">*Who decides the rate of the crops?</string>
+    <string name="the_farmer_will_himself_set_the_price_of_his_crops">The farmer will himself set the price of his crops.</string>
+    <string name="will_there_be_any_charges_for_registration_on_the_app">*Will there be any charges for registration on the app?</string>
+    <string name="no_registring_on_the_app_is_absolutely_free_this_app_doesn_t_even_charge_for_listing">No,registring on the app is absolutely free. This app doesn\'t even charge for listing.</string>
+    <string name="what_is_listing">*What is listing?</string>
+    <string name="listing_refers_to_filling_out_all_the_necessary_information_and_adding_images_of_the_product_so_that_a_customer_can_make_a_informed_buying_decision">Listing refers to filling out all the necessary information and adding images of the product so that a customer can make a informed buying decision.</string>
+    <string name="who_takes_care_of_delivery_of_my_crop">*Who takes care of delivery of my crop?</string>
+    <string name="the_transporters_who_have_registered_successfully_with_the_app_and_are_ready_to_carry_out_the_delivery_work_at_given_rate">The transporters who have registered successfully with the app and are ready to carry out the delivery work at given rate.</string>
+
+    <string name="your_name">नाम</string>
+    <string name="your_mail_id">अपनी ईमेल आईडी</string>
+    <string name="submit">जमा करें</string>
+    <string name="support">मदद</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="logout">बाहर</string>
+    <string name="driver_license_number_edit">ड्राइविंग लाइसेंस नंबर दर्ज करें</string>
+    <string name="vehicle_registration_edit">वाहन पंजीकरण संख्या दर्ज करें</string>
+
+    <string name="vehicle_type_spinner">वाहन के प्रकार का चयन करें</string>
+
+    <string name="transport_capacity_edit">वाहन क्षमता दर्ज करें</string>
+    <string name="transport_capacity_unit_edit">वाहन क्षमता इकाई दर्ज करें</string>
+
+    <string name="price_km_edit">दर्ज मूल्य प्रति किमी</string>
+
+    <string-array name="pro_commodities">
+        <item>आलू</item>
+        <item>प्याज</item>
+        <item>चावल</item>
+        <item>गेहूं</item>
+        <item>लहसुन</item>
+        <item>अदरक</item>
+    </string-array>
+    <string name="phone_edit">मोबाइल नंबर दर्ज करें</string>
+    <string name="name_edit">अपना नाम दर्ज करें</string>
+    <string name="dob_edit">जन्म् की तारीख़ दर्ज करे</string>
+    <string name="address_edit">अपना पता दर्ज करें</string>
+    <string name="uid_edit">अपना आधार संख्या डालें</string>
+
+    <string name="education">शिक्षा</string>
+    <string name="scan">स्कैन</string>
+    <string name="findtrans">ट्रांसपोर्टर खोजें</string>
+    <string name="pro_type">प्रकार</string>
+    <string name="mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="verification_code">ओटीपी दर्ज करें</string>
+    <string name="send_code">कोड भेजें</string>
+    <string name="error_otp">त्रुटि</string>
+    <string name="otp">अपना ओटीपी कोड दर्ज करें</string>
+    <string name="qtyKg">मात्रा (किग्रा में)</string>
+    <string name="buy">खरीदें</string>
+    <string name="enter_your_complains">अपनी शिकायत दर्ज करें</string>
+    <string name="edit_image">छवि संपादित करें</string>
+    <string name="test_product_quality">उत्पाद की गुणवत्ता</string>
+    <string-array name="india_states">
+        <item>झारखंड</item>
+        <item>बिहार</item>
+        <item>गुजरात</item>
+        <item>राजस्थान</item>
+        <item>तमिलनाडू</item>
+    </string-array>
+    <string-array name="jharkhand">
+        <item>गढ़वा</item>
+        <item> कोडरमा</item>
+        <item>पलामू</item>
+        <item>लातेहार</item>
+        <item>चतरा</item>
+        <item> हजारीबाग</item>
+        <item>गिरिडीह</item>
+    </string-array>
+    <string-array name="bihar">
+        <item>अररिया</item>
+        <item>अरवल</item>
+        <item>Aurangabad</item>
+        <item>बँका</item>
+        <item>Begusarai</item>
+        <item>भागलपुर</item>
+        <item>भोजपुर</item>
+    </string-array>
+    <string-array name="gujrat">
+        <item>  अहमदाबाद</item>
+        <item> वडोदरा</item>
+        <item> आनंद</item>
+        <item>छोटा उदयपुर</item>
+        <item> दाहोद</item>
+        <item>छोटा उदयपुर</item>
+        <item> दाहोद </item>
+        <item> खेड़ा</item>
+        <item>महीसागर</item>
+        <item> पंचमहल</item>
+    </string-array>
+    <string-array name="rajasthan">
+        <item> अजमेर</item>
+        <item>अलवर</item>
+        <item>बांसवाड़ा</item>
+        <item>Baran</item>
+        <item>बाड़मेर</item>
+        <item>भरतपुर</item>
+    </string-array>
+    <string-array name="tamilnadu">
+        <item>अरियालुर</item>
+        <item>चेन्नई</item>
+        <item>कुड्डालोर</item>
+        <item>धर्मपुरी</item>
+        <item>डिंडीगुल</item>
+        <item></item>
+    </string-array>
+
+
+    <string name="transporter_name">नाम</string>
+    <string name="type_of_truck">ट्रक के प्रकार</string>
+    <string name="transport_quantity">मात्रा</string>
+    <string name="transporter_district">जिला</string>
+    <string name="hire_btn">किराया</string>
+    <string name="find_nearby_transporter">पास के ट्रांसपोर्टर खोजें</string>
+    <string name="transporter_vehicle_number">वाहन नोंदणी क्रमांक</string>
 </resources>

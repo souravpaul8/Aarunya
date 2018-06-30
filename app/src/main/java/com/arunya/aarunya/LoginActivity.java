@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,6 +28,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,6 +41,9 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginPassText;
     private Button loginBtn;
     private Button loginRegBtn;
+    public String uid;
+    private DatabaseReference mRef;
+    private String register;
 
     SignInButton googleSignIn;
     private GoogleSignInClient mGoogleSignInClient;
@@ -83,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
                 if(firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(LoginActivity.this,LanguageActivity.class));
+                    startActivity(new Intent(LoginActivity.this,producer.class));
                 }
 
             }
@@ -202,8 +211,35 @@ public class LoginActivity extends AppCompatActivity {
 
     private void sendToMain() {
 
+        FirebaseUser user = mAuth.getCurrentUser();
+        uid = user.getUid();
+
+        mRef = FirebaseDatabase.getInstance().getReference().child("Users").child(uid).child("registerAs");
+        mRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                register = dataSnapshot.getValue().toString();
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        if(register.equalsIgnoreCase("Producer"))
+            startActivity(new Intent(this,producer.class));
+
+        else if(register.equalsIgnoreCase("Consumer"))
+            startActivity(new Intent(this,consumer.class));
+        else
+            startActivity(new Intent(this,TransporterHomeActivity.class));
+
+        /*
         Intent mainIntent = new Intent(LoginActivity.this, LanguageActivity.class);
-        startActivity(mainIntent);
+        startActivity(mainIntent);*/
         finish();
 
     }

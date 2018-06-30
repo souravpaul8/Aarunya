@@ -110,6 +110,7 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                 String Address = mAddress.getText().toString();
                 String Aadhaar = mAadhaar.getText().toString();
                 String PhoneNum = mPhoneNum.getText().toString();
+                String RegisterAs = "Transporter";
                 //String state = mState.getSelectedItem().toString();
                 //String district = mDistrict.getSelectedItem().toString();
                 //String CapacityInUnit = mCapacityInUnit.getSelectedItem().toString();
@@ -136,7 +137,7 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                 if(!LicenseNumber.equals("") && !VehicleRegistration.equals("") && !VehicleCapacity.equals("")
                         && !PricePerKm.equals("")){
                     TransporterExtraInfo transporterExtraInfo = new TransporterExtraInfo(Name,DOB,Address,
-                            PhoneNum, Aadhaar,LicenseNumber,VehicleRegistration, VehicleCapacity,
+                            PhoneNum, Aadhaar,RegisterAs,LicenseNumber,VehicleRegistration, VehicleCapacity,
                             PricePerKm);
                     myRef.child("Users").child("Transporter").child(userID).setValue(transporterExtraInfo);
                     toastMessage("New Information has been saved.");
@@ -160,11 +161,6 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
     }
 
 

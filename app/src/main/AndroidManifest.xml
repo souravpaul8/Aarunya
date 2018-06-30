@@ -3,6 +3,8 @@
     package="com.arunya.aarunya">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,32 +20,89 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".producer" />
-        <activity android:name=".prod_complain" />
-        <activity android:name=".prod_faq" />
-        <activity android:name=".news" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Support" />
-        <activity android:name=".Enquiry" />
-        <activity android:name=".MandiRate" />
-        <activity android:name=".Government_schemes" />
-        <activity android:name=".weather" />
-        <activity android:name=".chat_activity"/>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".LanguageActivity" />
-        <activity android:name=".NewRegistrationProducerActivity" />
-        <activity android:name=".NewRegistrationTransporterActivity" />
-        <activity android:name=".RegisterPasswordActivity" />
-        <activity android:name=".RegisterAsActivity" />
-        <activity android:name=".NewRegistrationConsumerActivity" />
-        <activity android:name=".ConsumerBuyActivity" />
-        <activity android:name=".TransporterHomeActivity" />
-        <activity android:name=".TransporterNewsActivity" />
-        <activity android:name=".TransporterViewAssignmentActivity" />
-        <activity android:name=".TransporterConfirmActivity" />
-        <activity android:name=".TransporterChooseActionActivity" />
-        <activity android:name=".TransporterContactActivity"/>
-        <activity android:name=".sell" />
+        <activity
+            android:name=".producer"
+            android:label="Home" />
+        <activity
+            android:name=".prod_complain"
+            android:label="Complain" />
+        <activity
+            android:name=".prod_faq"
+            android:label="FAQ" />
+        <activity
+            android:name=".news"
+            android:label="News" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile" />
+        <activity
+            android:name=".Support"
+            android:label="Support" />
+        <activity
+            android:name=".Enquiry"
+            android:label="Enquiry" />
+        <activity
+            android:name=".MandiRate"
+            android:label="Mandi Rate" />
+        <activity
+            android:name=".Government_schemes"
+            android:label="Government Schemes" />
+        <activity
+            android:name=".weather"
+            android:label="Weather" />
+        <activity
+            android:name=".chat_activity"
+            android:label="Chat" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".LanguageActivity"
+            android:label="Language" />
+        <activity
+            android:name=".NewRegistrationProducerActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".NewRegistrationTransporterActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".RegisterPasswordActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".RegisterAsActivity"
+            android:label="Register As" />
+        <activity
+            android:name=".NewRegistrationConsumerActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".ConsumerBuyActivity"
+            android:label="Buy" />
+        <activity
+            android:name=".TransporterHomeActivity"
+            android:label="Home" />
+        <activity
+            android:name=".TransporterNewsActivity"
+            android:label="News" />
+        <activity
+            android:name=".TransporterViewAssignmentActivity"
+            android:label="Assignments" />
+        <activity
+            android:name=".TransporterConfirmActivity"
+            android:label="Confirm Assignment" />
+        <activity
+            android:name=".TransporterChooseActionActivity"
+            android:label="Choose an Action" />
+        <activity
+            android:name=".TransporterContactActivity"
+            android:label="Contacts" />
+        <activity
+            android:name=".sell"
+            android:label="Sell" />
+        <activity
+            android:name=".consumer"
+            android:label="Home" />
+        <activity android:name=".PhoneVerification" />
+        <activity android:name=".FindTransporter"></activity>
     </application>
 
 </manifest>

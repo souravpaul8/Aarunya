@@ -1,17 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.arunya.aarunya.Profile">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
-        android:text="This is Profile" />
-</RelativeLayout>
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context="com.arunya.aarunya.MainActivity">
+
+        <ImageView
+            android:src="@drawable/pro_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Image"
+            android:layout_gravity="center"
+            android:id="@+id/edit_image_btn"/>
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/name_text" />
+
+        <TextView
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dob_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/dob_text" />
+
+        <TextView
+            android:id="@+id/dob_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/dob_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/state_text" />
+
+        <TextView
+            android:id="@+id/state_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="State"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/district_text"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/district_text" />
+
+
+        <TextView
+            android:id="@+id/district_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16sp"
+            android:hint="District"/>
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/address_text" />
+
+
+        <TextView
+            android:id="@+id/address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/address_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:text="@string/phone_text" />
+
+        <TextView
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/phone_edit"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/uid_text"
+            android:layout_width="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:text="@string/uid_text" />
+
+        <TextView
+            android:id="@+id/uid_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/uid_edit"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:text="@string/submit_btn" />
+
+    </LinearLayout>
+</ScrollView>

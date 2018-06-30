@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,10 +28,10 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
 
     private Button btnSubmit;
     private EditText mName,mDob,mAddress,mPhoneNum,mAadhaar;
-    //private Spinner mState,mDistrict;
+    private Spinner mState,mDistrict;
     private String stateText,districtText;
-    private RadioGroup mRegisterAs;
     private String userID;
+    private String mRegisterAs="Producer";
 
     //add Firebase Database stuff
     private FirebaseDatabase mFirebaseDatabase;
@@ -47,9 +48,10 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
         mDob = (EditText) findViewById(R.id.dob_edit);
         mAddress = (EditText) findViewById(R.id.address_edit);
         mAadhaar = (EditText) findViewById(R.id.uid_edit);
-        //mState = (Spinner) findViewById(R.id.state_edit);
-        //mDistrict = (Spinner) findViewById(R.id.district_edit);
+        mState = (Spinner) findViewById(R.id.state_edit);
+        mDistrict = (Spinner) findViewById(R.id.district_edit);
         mPhoneNum = (EditText) findViewById(R.id.phone_edit);
+        mRegisterAs = "Producer";
 
 
         //declare the database reference object. This is what we use to access the database.
@@ -104,8 +106,9 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                 String Address = mAddress.getText().toString();
                 String Aadhaar = mAadhaar.getText().toString();
                 String PhoneNum = mPhoneNum.getText().toString();
-                //String state = mState.getSelectedItem().toString();
-                //String district = mDistrict.getSelectedItem().toString();
+                String RegisterAs = "Producer";
+                String state = mState.getSelectedItem().toString();
+                String district = mDistrict.getSelectedItem().toString();
 
 
                 Log.d(TAG, "onClick: Attempting to submit to database: \n" +
@@ -116,18 +119,21 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                         //"State: " + state + "\n" +
                         "Aadhaar Number: " + Aadhaar + "\n" +
                         "Phone number: " + PhoneNum + "\n"
+
                 );
 
                 //handle the exception if the EditText fields are null
                 if(!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")){
-                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar);
-                    myRef.child("Users").child("Producer").child(userID).setValue(userInformation);
+                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar,RegisterAs);
+                    myRef.child("Users").child(userID).setValue(userInformation);
                     toastMessage("New Information has been saved.");
                     mName.setText("");
                     mDob.setText("");
                     mAddress.setText("");
                     mAadhaar.setText("");
                     mPhoneNum.setText("");
+
+
 
 
                         Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, producer.class);
@@ -137,11 +143,6 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
     }
 
     @Override

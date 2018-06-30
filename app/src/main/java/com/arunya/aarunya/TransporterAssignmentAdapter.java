@@ -34,8 +34,8 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
         View view = inflater.inflate(R.layout.trans_assignment_view_list_item,null);
         AssignmentViewHolder holder = new AssignmentViewHolder(view);
         return holder;
-
     }
+
 
     @Override
     public void onBindViewHolder(AssignmentViewHolder holder, int position) {
@@ -47,7 +47,6 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
         holder.distanceTextView.setText(assignmentView.getDistance());
         holder.durationTextView.setText(assignmentView.getDuration());
         holder.fullPaymentTextView.setText(assignmentView.getFullPayment());
-
         holder.listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +70,6 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
 
         public AssignmentViewHolder(View listItemView) {
              super(listItemView);
-
              this.listItemView = listItemView;
               fromTextView = listItemView.findViewById(R.id.from_place);
               toTextView = listItemView.findViewById(R.id.to_place);

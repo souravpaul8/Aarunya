@@ -19,10 +19,11 @@ public class TransporterExtraInfo {
     // private String district;
     private String vehicleCapacity;
     private String pricePerKm;
+    private String registerAs;
 
 
     public TransporterExtraInfo(String name, String dob, String address,
-                                String phone_num, String aadhaar,String licenseNumber, String vehicleRegistration, String vehicleCapacity,
+                                String phone_num, String aadhaar,String registerAs,String licenseNumber, String vehicleRegistration, String vehicleCapacity,
                            String pricePerKm) {
         this.name = name;
         this.dob = dob;
@@ -31,6 +32,7 @@ public class TransporterExtraInfo {
         this.address = address;
         this.phone_num = phone_num;
         this.aadhaar = aadhaar;
+        this.registerAs = registerAs;
         this.licenseNumber = licenseNumber;
         this.vehicleRegistration = vehicleRegistration;
         //this.state = state;
@@ -102,6 +104,14 @@ public class TransporterExtraInfo {
 
     public void setAadhaar(String aadhaar) {
         this.aadhaar = aadhaar;
+    }
+
+    public String getRegisterAs() {
+        return registerAs;
+    }
+
+    public void setRegisterAs(String name) {
+        this.registerAs = registerAs;
     }
 
 

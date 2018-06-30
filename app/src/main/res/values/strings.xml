@@ -1,4 +1,28 @@
 <resources>
+    <string name="enquiry_or_suggestion">Enquiry or Suggestion</string>
+    <string name="fill_following_form">Fill following form</string>
+    <string name="name">Name</string>
+    <string name="mail">Mail</string>
+
+    <string name="faqs_aarunya">FAQs - Aarunya</string>
+    <string name="who_all_can_register_on_aarunya">* Who all can register on Aarunya?</string>
+    <string name="one_may_register_as_producer_farmer_consumer_wholeseller_or_transporter_voter_id_card_no_is_must_for_registering_for_any_of_the_above_three_category_but_for_registering_as_a_transporter_driving_license_no_and_vehicle_registration_details_are_must">One may register as producer (farmer), consumer (wholeseller) or transporter. Voter ID card no. is must for registering for any of the above three category. But for registering as a transporter Driving License No. and Vehicle Registration Details are must.</string>
+    <string name="as_a_farmer_or_producer_why_should_i_sell_on_aarunya">*As a farmer or producer why should i sell on Aarunya?</string>
+    <string name="it_will_enable_producer_farmers_and_consumer_to_directly_contact_each_other_for_maximum_profit_we_will_provide_with_the_strongest_platform_to_take_one_s_crop_all_over_the_country">it will enable producer (farmers) and consumer to directly contact each other for maximum profit. We will provide with the strongest platform to take one\'s crop all over the country.</string>
+    <string name="how_can_i_buy_on_aarunya">*How can i buy on Aarunya?</string>
+    <string name="steps_to_follow_register_yourself_as_consumer_search_for_the_crop_wanted_required_from_the_provided_list_enter_the_quantity_for_purchase_negotiate_with_the_producer_seller"><![CDATA[Steps to follow: > Register yourself as consumer. > Search for the crop wanted/required from the provided list. > Enter the quantity for purchase. > Negotiate with the producer/seller.]]></string>
+    <string name="who_decides_the_rate_of_the_crops">*Who decides the rate of the crops?</string>
+    <string name="the_farmer_will_himself_set_the_price_of_his_crops">The farmer will himself set the price of his crops.</string>
+    <string name="will_there_be_any_charges_for_registration_on_the_app">*Will there be any charges for registration on the app?</string>
+    <string name="no_registring_on_the_app_is_absolutely_free_this_app_doesn_t_even_charge_for_listing">No,registring on the app is absolutely free. This app doesn\'t even charge for listing.</string>
+    <string name="what_is_listing">*What is listing?</string>
+    <string name="listing_refers_to_filling_out_all_the_necessary_information_and_adding_images_of_the_product_so_that_a_customer_can_make_a_informed_buying_decision">Listing refers to filling out all the necessary information and adding images of the product so that a customer can make a informed buying decision.</string>
+    <string name="who_takes_care_of_delivery_of_my_crop">*Who takes care of delivery of my crop?</string>
+    <string name="the_transporters_who_have_registered_successfully_with_the_app_and_are_ready_to_carry_out_the_delivery_work_at_given_rate">The transporters who have registered successfully with the app and are ready to carry out the delivery work at given rate.</string>
+
+    <string name="your_name">your name</string>
+    <string name="your_mail_id">your mail ID</string>
+    <string name="submit">Submit</string>
     <string name="app_name">Aarunya</string>
     <string name="email_hint">Email</string>
     <string name="pass_hint">Password</string>
@@ -28,6 +52,9 @@
     <string name="register_as_buyer">Register as Buyer</string>
     <string name="register_as_transporter">Register as Transporter</string>
     <string name="submit_btn">Submit</string>
+    <string name="support">Support</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
     <string name="transporter_detail">Transport Details</string>
     <string name="driver_license_number_text">Driving License Number</string>
     <string name="driver_license_number_edit">Enter Driving License Number</string>
@@ -68,7 +95,7 @@
     <string name="pro_enquiry">Enquiry</string>
     <string name="pro_complain">complain</string>
     <string name="pro_employment">employment</string>
-    <string name="pro_faq">faq</string>
+    <string name="pro_faq">Faq</string>
     <string name="pro_farmingnews">farming news</string>
     <string name="pro_weather">weather reports</string>
     <string name="pro_govtoffers">govt offers</string>
@@ -110,8 +137,127 @@
         <item>Garlic</item>
         <item>Ginger</item>
     </string-array>
+    <string-array name="potatotypes">
+        <item>Kufri Lima</item>
+        <item>Kufri Ashoka </item>
+        <item>Kufri Badshah </item>
+        <item>Kufri Bahar</item>
+        <item>Kufri Dewa</item>
+    </string-array>
+    <string-array name="oniontypes">
+        <item>Pusa Red</item>
+        <item>Pusa Ratnar</item>
+        <item>Pusa Madhavi</item>
+        <item>Arka Pragati</item>
+        <item>Arka Kalyan</item>
+    </string-array>
+    <string-array name="garlictypes">
+        <item>Bhima Omkar</item>
+        <item>Bhima Purple </item>
+        <item>Agrifound White  </item>
+        <item>Yamuna Safed</item>
+        <item>Agrifound Parvati</item>
+    </string-array>
+    <string-array name="ricetypes">
+        <item>Annapoornna</item>
+        <item>Basmati rice </item>
+        <item>Pusa Rice </item>
+        <item>Laxmi Bhog</item>
+        <item>hut Muri</item>
+    </string-array>
+    <string-array name="wheattypes">
+        <item>Triticum Sphaerococcum </item>
+        <item> Triticum aestivum  </item>
+        <item>Triticum durum </item>
+        <item> Triticum dicoccum</item>
+    </string-array>
+
+    <string-array name="gingertypes">
+        <item>Suprabha</item>
+        <item>Suruchi</item>
+        <item>Suravi </item>
+        <item>Himagiri</item>
+        <item>IISR- Varada</item>
+    </string-array>
+
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="prod_img">Select Image of crop</string>
+    <string name="education">Education</string>
+    <string name="scan">Scan</string>
+    <string name="findtrans">Find Transporter</string>
+    <string name="pro_type">Types</string>
+    <string name="mobile_number">Enter Mobile Number</string>
+    <string name="verification_code">Enter OTP</string>
+    <string name="send_code">Send Code</string>
+    <string name="error_otp">Error</string>
+    <string name="otp">Enter Your Otp Code</string>
+    <string name="qtyKg">Quantity (in Kg)</string>
+    <string name="buy">Buy</string>
+    <string name="enter_your_complains">Enter Your Complains</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="test_product_quality">Test Product Quality</string>
+    <string-array name="india_states">
+        <item>Jharkhand</item>
+        <item>Bihar</item>
+        <item>Gujarat</item>
+        <item>Rajasthan</item>
+        <item>Tamil Nadu</item>
+    </string-array>
+    <string-array name="jharkhand">
+        <item>Garhwa</item>
+        <item> Koderma</item>
+        <item>Palamu</item>
+        <item>Latehar</item>
+        <item>Chatra</item>
+        <item> Hazaribagh</item>
+        <item>Giridih</item>
+    </string-array>
+    <string-array name="bihar">
+        <item>Araria</item>
+        <item>Arwal</item>
+        <item>Aurangabad</item>
+        <item>Banka</item>
+        <item>Begusarai</item>
+        <item>Bhagalpur</item>
+        <item>Bhojpur</item>
+    </string-array>
+    <string-array name="gujrat">
+        <item> Ahmedabad</item>
+        <item>Vadodara</item>
+        <item> Anand</item>
+        <item>Chhota Udaipur</item>
+        <item> Dahod</item>
+        <item>Chhota Udaipur</item>
+        <item>  Dahod</item>
+        <item> Kheda</item>
+        <item>Mahisagar</item>
+        <item> Panchmahal</item>
+    </string-array>
+    <string-array name="rajasthan">
+        <item> Ajmer</item>
+        <item>Alwar</item>
+        <item>Banswara</item>
+        <item>Baran</item>
+        <item>Barmer</item>
+        <item>Bharatpur</item>
+    </string-array>
+    <string-array name="tamilnadu">
+        <item>Ariyalur</item>
+        <item>Chennai</item>
+        <item>Cuddalore</item>
+        <item>Dharmapuri</item>
+        <item>Dindigul</item>
+        <item></item>
+    </string-array>
+
+
+    <string name="transporter_name">Name</string>
+    <string name="type_of_truck">Type of Truck</string>
+    <string name="transport_quantity">Quantity</string>
+    <string name="transporter_district">District</string>
+    <string name="hire_btn">Hire</string>
+    <string name="find_nearby_transporter">Find Nearby Transporter</string>
+    <string name="transporter_vehicle_number">Vehicle Registration Number</string>
 
 </resources>

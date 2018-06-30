@@ -35,6 +35,9 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
     private Button btn_location;
     private LocationManager locationManager;
     private LocationListener locationListener;
+    public double lattitude;
+    public double longitude;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,8 +115,8 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
             @Override
             public void onLocationChanged(Location location) {
 
-                double longi = location.getLongitude();
-                double lati = location.getLatitude();
+                longitude = location.getLongitude();
+                lattitude = location.getLatitude();
 
             }
 
@@ -180,7 +183,6 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
         btn_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                locationManager.requestLocationUpdates("gps", 5000, 0, locationListener);
             }
         });
 

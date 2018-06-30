@@ -45,7 +45,7 @@ public class LanguageActivity extends AppCompatActivity {
         });
     }
     public void openprodactivity(){
-        Intent in = new Intent(this,producer.class);
+        Intent in = new Intent(this,LoginActivity.class);
         startActivity(in);
     }
 
@@ -100,6 +100,4 @@ public class LanguageActivity extends AppCompatActivity {
     public void onBackPressed() {
         moveTaskToBack(true);
     }
-
-
 }

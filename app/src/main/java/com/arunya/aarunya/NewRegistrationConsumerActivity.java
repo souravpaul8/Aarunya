@@ -29,7 +29,7 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
     private EditText mName,mDob,mAddress,mPhoneNum,mAadhaar;
     //private Spinner mState,mDistrict;
     private String stateText,districtText;
-    private RadioGroup mRegisterAs;
+   private String mRegisterAs;
     private String userID;
 
     //add Firebase Database stuff
@@ -102,6 +102,8 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
                 String Address = mAddress.getText().toString();
                 String Aadhaar = mAadhaar.getText().toString();
                 String PhoneNum = mPhoneNum.getText().toString();
+                mRegisterAs = "Consumer";
+                String RegisterAs =mRegisterAs;
                 //String state = mState.getSelectedItem().toString();
                 //String district = mDistrict.getSelectedItem().toString();
 
@@ -118,8 +120,8 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
 
                 //handle the exception if the EditText fields are null
                 if(!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")){
-                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar);
-                    myRef.child("Users").child("Consumer").child(userID).setValue(userInformation);
+                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar,RegisterAs);
+                    myRef.child("Users").child(userID).setValue(userInformation);
                     toastMessage("New Information has been saved.");
                     mName.setText("");
                     mDob.setText("");
@@ -135,11 +137,6 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
     }
 
     @Override

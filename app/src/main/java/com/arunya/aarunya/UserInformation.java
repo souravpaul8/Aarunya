@@ -13,10 +13,11 @@ public class UserInformation {
     private String address;
     private String phone_num;
     private String aadhaar;
+    private String registerAs;
 
 
     public UserInformation(String name, String dob, String address,
-                           String phone_num, String aadhaar) {
+                           String phone_num, String aadhaar,String registerAs) {
         this.name = name;
         this.dob = dob;
         //this.state = state;
@@ -24,6 +25,7 @@ public class UserInformation {
         this.address = address;
         this.phone_num = phone_num;
         this.aadhaar = aadhaar;
+        this.registerAs = registerAs;
     }
 
 
@@ -33,6 +35,14 @@ public class UserInformation {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRegisterAs() {
+        return registerAs;
+    }
+
+    public void setRegisterAs(String name) {
+        this.registerAs = registerAs;
     }
 
 

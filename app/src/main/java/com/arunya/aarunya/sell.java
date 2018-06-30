@@ -71,6 +71,9 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
 
             }
         };
+        producer prod = new producer();
+        final double latt =prod.lattitude;
+        final double longi =prod.longitude;
 
     msellbtn = (Button) findViewById(R.id.submit);
 
@@ -83,6 +86,8 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
             double rate = Double.parseDouble(srate);
             String sqty = qty.getText().toString();
             double quantity = Double.parseDouble(sqty);
+            String lat1 = String.valueOf(latt);
+            String longi1 = String.valueOf(longi);
 
             //adding child
             HashMap<String,String> datamap = new HashMap<String, String>();
@@ -90,6 +95,9 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
             datamap.put("Quantity",sqty);
             datamap.put("Basic Rate",srate);
             datamap.put("User Id",userID);
+            datamap.put("Lattitude",lat1);
+            datamap.put("Longitude",longi1);
+
             sellDatabase.push().setValue(datamap);
 
 
