@@ -6,11 +6,11 @@ import java.util.Date;
  * Created by RAJ on 24-03-2018.
  */
 
-public class Message
-{
+public class Message {
     private String mText;
     private String mSender;
     private Date mDate;
+
     /*for getting date on the message */
     public Date getmDate() {
         return mDate;
@@ -35,11 +35,6 @@ public class Message
     public void setmText(String mText) {
         this.mText = mText;
     }
-
-
-
-
-
 
 
 }

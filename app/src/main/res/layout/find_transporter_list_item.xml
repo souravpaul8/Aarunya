@@ -2,18 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:padding="10dp"
     android:layout_height="300dp"
-    android:minHeight="160dp">
+    android:minHeight="160dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
 
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/image_view"
         android:orientation="vertical"
         android:paddingLeft="16dp">
@@ -21,44 +21,47 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/transporter_name"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom"
+                android:text="@string/transporter_name"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="@string/transporter_name"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/transporter_name_text"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
                 android:text="Satpal Singh"
-                android:layout_gravity="center"/>
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/type_of_truck"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom"
+                android:text="@string/type_of_truck"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="@string/type_of_truck"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/type_of_truck_text"
@@ -75,17 +78,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/transport_quantity"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom"
+                android:text="@string/transport_quantity"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="@string/transport_quantity"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/transport_quantity_text"
@@ -102,17 +106,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/transporter_district"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom"
+                android:text="@string/transporter_district"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="@string/transporter_district"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/transporter_district_text"
@@ -129,17 +134,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/transporter_vehicle_number"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="bottom"
+                android:text="@string/transporter_vehicle_number"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="@string/transporter_vehicle_number"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/transporter_vehicle_number_text"
@@ -147,9 +153,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="JH 10 AE 3429"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textStyle="bold"
-                android:text="JH 10 AE 3429" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 

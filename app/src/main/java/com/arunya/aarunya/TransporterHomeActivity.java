@@ -22,17 +22,17 @@ public class TransporterHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transporter_home);
 
-        viewAsignment =(Button)findViewById(R.id.view_assignment);
-        news =(Button)findViewById(R.id.view_news);
-        weather =(Button)findViewById(R.id.view_weather);
-        helpline =(Button)findViewById(R.id.view_helpline);
-        history =(Button)findViewById(R.id.view_history);
+        viewAsignment = (Button) findViewById(R.id.view_assignment);
+        news = (Button) findViewById(R.id.view_news);
+        weather = (Button) findViewById(R.id.view_weather);
+        helpline = (Button) findViewById(R.id.view_helpline);
+        history = (Button) findViewById(R.id.view_history);
 
 
         viewAsignment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TransporterHomeActivity.this,TransporterViewAssignmentActivity.class);
+                Intent intent = new Intent(TransporterHomeActivity.this, TransporterViewAssignmentActivity.class);
                 startActivity(intent);
 
             }
@@ -41,7 +41,7 @@ public class TransporterHomeActivity extends AppCompatActivity {
         news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TransporterHomeActivity.this,TransporterNewsActivity.class);
+                Intent intent = new Intent(TransporterHomeActivity.this, TransporterNewsActivity.class);
                 startActivity(intent);
 
             }

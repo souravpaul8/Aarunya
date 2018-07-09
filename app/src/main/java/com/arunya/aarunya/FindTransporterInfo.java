@@ -12,7 +12,7 @@ public class FindTransporterInfo {
     private String mDistrict;
     private String mVehicleNumber;
 
-    public FindTransporterInfo(String mName, String mTypeOfTruck, String mQuantity, String mDistrict,String mVehicleNumber) {
+    public FindTransporterInfo(String mName, String mTypeOfTruck, String mQuantity, String mDistrict, String mVehicleNumber) {
         this.mName = mName;
         this.mTypeOfTruck = mTypeOfTruck;
         this.mQuantity = mQuantity;

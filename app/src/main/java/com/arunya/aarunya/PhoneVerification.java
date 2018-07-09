@@ -74,13 +74,13 @@ public class PhoneVerification extends AppCompatActivity {
 
         mErrorText = (TextView) findViewById(R.id.errorText);
 
-        mAuth =FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(btnType==0) {
+                if (btnType == 0) {
                     // mPhoneBar.setVisibility(View.VISIBLE);
                     mPhoneText.setEnabled(false);
                     mSendBtn.setEnabled(false);
@@ -94,14 +94,12 @@ public class PhoneVerification extends AppCompatActivity {
                             PhoneVerification.this,
                             mCallbacks
                     );
-                }
-
-                else {
+                } else {
 
                     mSendBtn.setEnabled(false);
                     // mCodeBar.setVisibility(View.VISIBLE);
 
-                    String verificationCode=mCodeText.getText().toString();
+                    String verificationCode = mCodeText.getText().toString();
 
                     PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
                     signInWithPhoneAuthCredential(credential);
@@ -135,7 +133,6 @@ public class PhoneVerification extends AppCompatActivity {
                 btnType = 1;
 
 
-
                 mSendBtn.setText("Verify Code");
                 mSendBtn.setEnabled(true);
 
@@ -152,10 +149,10 @@ public class PhoneVerification extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Toast.makeText(PhoneVerification.this,"Sucessful",
+                            Toast.makeText(PhoneVerification.this, "Sucessful",
                                     Toast.LENGTH_SHORT).show();
 
-                            Intent registerIntent = new Intent(PhoneVerification.this,RegisterAsActivity.class);
+                            Intent registerIntent = new Intent(PhoneVerification.this, RegisterAsActivity.class);
                             startActivity(registerIntent);
                             finish();
 

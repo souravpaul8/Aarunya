@@ -14,19 +14,19 @@ import java.util.ArrayList;
  * Created by SOURAV PAUL on 3/31/2018.
  */
 
-public class FindTransporterAdapter  extends ArrayAdapter<FindTransporterInfo> {
+public class FindTransporterAdapter extends ArrayAdapter<FindTransporterInfo> {
 
 
-    public FindTransporterAdapter (Activity context, ArrayList<FindTransporterInfo> findTransporterInfo) {
+    public FindTransporterAdapter(Activity context, ArrayList<FindTransporterInfo> findTransporterInfo) {
 
-        super(context , 0, findTransporterInfo);
+        super(context, 0, findTransporterInfo);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.find_transporter_list_item, parent, false);
         }
@@ -63,8 +63,6 @@ public class FindTransporterAdapter  extends ArrayAdapter<FindTransporterInfo> {
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         vehicleNumber.setText(findTransporterInfoView.getmVehicleNumber());
-
-
 
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)

@@ -8,8 +8,8 @@ public class UserInformation {
 
     private String name;
     private String dob;
-   // private String state;
-   // private String district;
+    // private String state;
+    // private String district;
     private String address;
     private String phone_num;
     private String aadhaar;
@@ -17,7 +17,7 @@ public class UserInformation {
 
 
     public UserInformation(String name, String dob, String address,
-                           String phone_num, String aadhaar,String registerAs) {
+                           String phone_num, String aadhaar, String registerAs) {
         this.name = name;
         this.dob = dob;
         //this.state = state;
@@ -57,19 +57,19 @@ public class UserInformation {
 
     //public String getState() {
     //    return state;
-   // }
+    // }
 
     //public void setState(String state) {
-     //   this.state = state;
+    //   this.state = state;
     //}
 
 
     //public String getDistrict() {
-      //  return district;
+    //  return district;
     //}
 
     //public void setDistrict(String district) {
-      //  this.district = district;
+    //  this.district = district;
     //}
 
 
@@ -91,8 +91,6 @@ public class UserInformation {
     }
 
 
-
-
     public String getAadhaar() {
         return aadhaar;
     }
@@ -100,7 +98,6 @@ public class UserInformation {
     public void setAadhaar(String aadhaar) {
         this.aadhaar = aadhaar;
     }
-
 
 
 }

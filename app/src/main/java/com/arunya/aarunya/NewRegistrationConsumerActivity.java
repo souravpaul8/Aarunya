@@ -26,10 +26,10 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
     private static final String TAG = "AddToDatabase";
 
     private Button btnSubmit;
-    private EditText mName,mDob,mAddress,mPhoneNum,mAadhaar;
+    private EditText mName, mDob, mAddress, mPhoneNum, mAadhaar;
     //private Spinner mState,mDistrict;
-    private String stateText,districtText;
-   private String mRegisterAs;
+    private String stateText, districtText;
+    private String mRegisterAs;
     private String userID;
 
     //add Firebase Database stuff
@@ -103,7 +103,7 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
                 String Aadhaar = mAadhaar.getText().toString();
                 String PhoneNum = mPhoneNum.getText().toString();
                 mRegisterAs = "Consumer";
-                String RegisterAs =mRegisterAs;
+                String RegisterAs = mRegisterAs;
                 //String state = mState.getSelectedItem().toString();
                 //String district = mDistrict.getSelectedItem().toString();
 
@@ -119,8 +119,8 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
                 );
 
                 //handle the exception if the EditText fields are null
-                if(!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")){
-                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar,RegisterAs);
+                if (!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")) {
+                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar, RegisterAs);
                     myRef.child("Users").child(userID).setValue(userInformation);
                     toastMessage("New Information has been saved.");
                     mName.setText("");
@@ -130,9 +130,9 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
                     mPhoneNum.setText("");
 
 
-                    Intent afterSubmit = new Intent(NewRegistrationConsumerActivity.this,consumer.class);
+                    Intent afterSubmit = new Intent(NewRegistrationConsumerActivity.this, consumer.class);
                     startActivity(afterSubmit);
-                }else{
+                } else {
                     toastMessage("Fill out all the fields");
                 }
             }
@@ -156,10 +156,11 @@ public class NewRegistrationConsumerActivity extends AppCompatActivity {
 
     /**
      * customizable toast
+     *
      * @param message
      */
-    private void toastMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 

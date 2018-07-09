@@ -24,10 +24,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-public class sell extends AppCompatActivity implements AdapterView.OnItemSelectedListener,NavigationView.OnNavigationItemSelectedListener{
+public class sell extends AppCompatActivity implements AdapterView.OnItemSelectedListener, NavigationView.OnNavigationItemSelectedListener {
 
     //to store the values
-    private EditText basic_rate,qty;
+    private EditText basic_rate, qty;
     private String commodities;
     private String userID;
     private DrawerLayout mdl;
@@ -49,15 +49,15 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
         setContentView(R.layout.activity_sell);
         Spinner sp_comm = findViewById(R.id.commodity);
         final ArrayAdapter<CharSequence> adp = ArrayAdapter.createFromResource
-                (this,R.array.pro_commodities,android.R.layout.simple_spinner_item);
-    adp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-    sp_comm.setAdapter(adp);
-    sp_comm.setOnItemSelectedListener(this);
+                (this, R.array.pro_commodities, android.R.layout.simple_spinner_item);
+        adp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp_comm.setAdapter(adp);
+        sp_comm.setOnItemSelectedListener(this);
 
-    basic_rate=(EditText)findViewById(R.id.basicrate);
-    qty = (EditText)findViewById(R.id.quantity);
+        basic_rate = (EditText) findViewById(R.id.basicrate);
+        qty = (EditText) findViewById(R.id.quantity);
 
-    //for storing objects in database
+        //for storing objects in database
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
@@ -72,44 +72,43 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
             }
         };
         producer prod = new producer();
-        final double latt =prod.lattitude;
-        final double longi =prod.longitude;
+        final double latt = prod.lattitude;
+        final double longi = prod.longitude;
 
-    msellbtn = (Button) findViewById(R.id.submit);
+        msellbtn = (Button) findViewById(R.id.submit);
 
-    sellDatabase= FirebaseDatabase.getInstance().getReference().child("commodities");
-    msellbtn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
+        sellDatabase = FirebaseDatabase.getInstance().getReference().child("commodities");
+        msellbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-            String srate = basic_rate.getText().toString();
-            double rate = Double.parseDouble(srate);
-            String sqty = qty.getText().toString();
-            double quantity = Double.parseDouble(sqty);
-            String lat1 = String.valueOf(latt);
-            String longi1 = String.valueOf(longi);
+                String srate = basic_rate.getText().toString();
+                double rate = Double.parseDouble(srate);
+                String sqty = qty.getText().toString();
+                double quantity = Double.parseDouble(sqty);
+                String lat1 = String.valueOf(latt);
+                String longi1 = String.valueOf(longi);
 
-            //adding child
-            HashMap<String,String> datamap = new HashMap<String, String>();
-            datamap.put("Commodities",commodities);
-            datamap.put("Quantity",sqty);
-            datamap.put("Basic Rate",srate);
-            datamap.put("User Id",userID);
-            datamap.put("Lattitude",lat1);
-            datamap.put("Longitude",longi1);
+                //adding child
+                HashMap<String, String> datamap = new HashMap<String, String>();
+                datamap.put("Commodities", commodities);
+                datamap.put("Quantity", sqty);
+                datamap.put("Basic Rate", srate);
+                datamap.put("User Id", userID);
+                datamap.put("Lattitude", lat1);
+                datamap.put("Longitude", longi1);
 
-            sellDatabase.push().setValue(datamap);
+                sellDatabase.push().setValue(datamap);
 
 
-
-        }
-    });
-        mdl = (DrawerLayout)findViewById(R.id.drawer);
-        mToggle = new ActionBarDrawerToggle(this,mdl,R.string.open,R.string.close);
+            }
+        });
+        mdl = (DrawerLayout) findViewById(R.id.drawer);
+        mToggle = new ActionBarDrawerToggle(this, mdl, R.string.open, R.string.close);
         mdl.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navView = (NavigationView)findViewById(R.id.navView);
+        NavigationView navView = (NavigationView) findViewById(R.id.navView);
         navView.setNavigationItemSelectedListener(this);
 
 
@@ -118,18 +117,17 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(mToggle.onOptionsItemSelected(item)){
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
 
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
         String text = parent.getItemAtPosition(i).toString();
-        Toast.makeText(parent.getContext(),text,Toast.LENGTH_SHORT).show();
+        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
         commodities = text;
     }
 
@@ -141,7 +139,7 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.profile:
                 Intent in = new Intent(this, Profile.class);
@@ -149,14 +147,14 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.support:
                 Intent in = new Intent(this, Support.class);
                 startActivity(in);
                 return true;
         }
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.language:
                 Intent in = new Intent(this, LanguageActivity.class);
@@ -164,7 +162,7 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.faq:
                 Intent in = new Intent(this, prod_faq.class);
@@ -172,7 +170,7 @@ public class sell extends AppCompatActivity implements AdapterView.OnItemSelecte
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.enquiry:
                 Intent in = new Intent(this, Enquiry.class);

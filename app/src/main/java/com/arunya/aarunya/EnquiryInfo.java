@@ -8,7 +8,7 @@ public class EnquiryInfo {
 
     private String name;
     private String mail;
-    private  String enquiry;
+    private String enquiry;
 
     public EnquiryInfo(String name, String mail, String enquiry) {
         this.name = name;

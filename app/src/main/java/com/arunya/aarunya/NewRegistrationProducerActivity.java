@@ -27,11 +27,11 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
     private static final String TAG = "AddToDatabase";
 
     private Button btnSubmit;
-    private EditText mName,mDob,mAddress,mPhoneNum,mAadhaar;
-    private Spinner mState,mDistrict;
-    private String stateText,districtText;
+    private EditText mName, mDob, mAddress, mPhoneNum, mAadhaar;
+    private Spinner mState, mDistrict;
+    private String stateText, districtText;
     private String userID;
-    private String mRegisterAs="Producer";
+    private String mRegisterAs = "Producer";
 
     //add Firebase Database stuff
     private FirebaseDatabase mFirebaseDatabase;
@@ -123,8 +123,8 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                 );
 
                 //handle the exception if the EditText fields are null
-                if(!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")){
-                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar,RegisterAs);
+                if (!Name.equals("") && !DOB.equals("") && !Address.equals("") && !PhoneNum.equals("")) {
+                    UserInformation userInformation = new UserInformation(Name, DOB, Address, PhoneNum, Aadhaar, RegisterAs);
                     myRef.child("Users").child(userID).setValue(userInformation);
                     toastMessage("New Information has been saved.");
                     mName.setText("");
@@ -134,11 +134,9 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
                     mPhoneNum.setText("");
 
 
-
-
-                        Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, producer.class);
-                        startActivity(afterSubmit);
-                }else{
+                    Intent afterSubmit = new Intent(NewRegistrationProducerActivity.this, producer.class);
+                    startActivity(afterSubmit);
+                } else {
                     toastMessage("Fill out all the fields");
                 }
             }
@@ -162,10 +160,11 @@ public class NewRegistrationProducerActivity extends AppCompatActivity {
 
     /**
      * customizable toast
+     *
      * @param message
      */
-    private void toastMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 

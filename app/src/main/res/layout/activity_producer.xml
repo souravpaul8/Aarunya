@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.arunya.aarunya.producer"
-    android:id="@+id/drawer">
+    tools:context="com.arunya.aarunya.producer">
 
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,7 +40,7 @@
             android:layout_marginTop="20dp"
             android:background="@color/colorAccent"
             android:text="@string/pro_farmingnews"
-            android:textColor="@android:color/background_light"/>
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/weather"
@@ -53,9 +52,9 @@
             android:layout_marginTop="22dp"
             android:background="@color/colorAccent"
             android:text="@string/pro_weather"
+            android:textColor="@android:color/background_light"
             tools:layout_editor_absoluteX="141dp"
-            tools:layout_editor_absoluteY="59dp"
-            android:textColor="@android:color/background_light"/>
+            tools:layout_editor_absoluteY="59dp" />
 
         <Button
             android:id="@+id/offers"
@@ -79,9 +78,9 @@
             android:layout_marginTop="17dp"
             android:background="@color/colorAccent"
             android:text="@string/pro_mandi"
+            android:textColor="@android:color/background_light"
             tools:layout_editor_absoluteX="65dp"
-            tools:layout_editor_absoluteY="120dp"
-            android:textColor="@android:color/background_light"/>
+            tools:layout_editor_absoluteY="120dp" />
 
         <Button
             android:id="@+id/employment"
@@ -93,7 +92,7 @@
             android:layout_marginTop="26dp"
             android:background="@color/colorAccent"
             android:text="@string/pro_employment"
-            android:textColor="@android:color/background_light"/>
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/faq"
@@ -140,7 +139,9 @@
 
 
     </RelativeLayout>
+
     <android.support.design.widget.NavigationView
+        android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -149,8 +150,7 @@
         app:headerLayout="@layout/header"
         app:itemIconTint="@color/darkgray"
         app:itemTextColor="@color/darkgray"
-        app:menu="@menu/navigation_menu"
-        android:id="@+id/navView">
+        app:menu="@menu/navigation_menu">
 
 
     </android.support.design.widget.NavigationView>

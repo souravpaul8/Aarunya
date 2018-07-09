@@ -138,42 +138,37 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
             }
         };
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{
-                       android.Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION,
+                        android.Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION,
                         Manifest.permission.INTERNET
-                },10 );
+                }, 10);
                 return;
             }
-        }else{
+        } else {
             configureButton();
         }
 
 
-
-
-
-
         //For Drawer Layout
-        mdl = (DrawerLayout)findViewById(R.id.drawer);
-        mToggle = new ActionBarDrawerToggle(this,mdl,R.string.open,R.string.close);
+        mdl = (DrawerLayout) findViewById(R.id.drawer);
+        mToggle = new ActionBarDrawerToggle(this, mdl, R.string.open, R.string.close);
         mdl.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navView = (NavigationView)findViewById(R.id.navView);
+        NavigationView navView = (NavigationView) findViewById(R.id.navView);
         navView.setNavigationItemSelectedListener(this);
 
 
     }
 
 
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch (requestCode){
+        switch (requestCode) {
             case 10:
-                if(grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                     configureButton();
                 return;
         }
@@ -191,7 +186,7 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(mToggle.onOptionsItemSelected(item)) {
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
@@ -199,12 +194,10 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
     }
 
 
-
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.profile:
                 Intent in = new Intent(this, Profile.class);
@@ -212,14 +205,14 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.support:
                 Intent in = new Intent(this, Support.class);
                 startActivity(in);
                 return true;
         }
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.language:
                 Intent in = new Intent(this, LanguageActivity.class);
@@ -227,7 +220,7 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.faq:
                 Intent in = new Intent(this, prod_faq.class);
@@ -235,7 +228,7 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.enquiry:
                 Intent in = new Intent(this, Enquiry.class);
@@ -245,39 +238,46 @@ public class producer extends AppCompatActivity implements NavigationView.OnNavi
         }
         return false;
     }
-    public void opensell(){
-        Intent in = new Intent(this,sell.class);
-        startActivity(in);
-    }
-    public void openfaq(){
-        Intent in = new Intent(this,prod_faq.class);
+
+    public void opensell() {
+        Intent in = new Intent(this, sell.class);
         startActivity(in);
     }
 
-    public void opencomplain(){
-        Intent in = new Intent(this,prod_complain.class);
+    public void openfaq() {
+        Intent in = new Intent(this, prod_faq.class);
         startActivity(in);
     }
-    public void openWeb(View view){
+
+    public void opencomplain() {
+        Intent in = new Intent(this, prod_complain.class);
+        startActivity(in);
+    }
+
+    public void openWeb(View view) {
         Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.co.in/"));
         startActivity(in);
 
     }
-    public void opennews(){
-        Intent in = new Intent(this,news.class);
+
+    public void opennews() {
+        Intent in = new Intent(this, news.class);
         startActivity(in);
     }
-    public void openweather(){
-        Intent in = new Intent(this,weather.class);
+
+    public void openweather() {
+        Intent in = new Intent(this, weather.class);
         startActivity(in);
     }
+
     public void openscheme() {
-        Intent in = new Intent(this,Government_schemes.class);
+        Intent in = new Intent(this, Government_schemes.class);
         startActivity(in);
 
     }
-    public void openmandirate(){
-        Intent in = new Intent(this,MandiRate.class);
+
+    public void openmandirate() {
+        Intent in = new Intent(this, MandiRate.class);
         startActivity(in);
     }
 }

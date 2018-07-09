@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class prod_complain extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class prod_complain extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout mdl;
     private ActionBarDrawerToggle mToggle;
@@ -18,12 +18,12 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prod_complain);
-        mdl = (DrawerLayout)findViewById(R.id.drawer_complain);
-        mToggle = new ActionBarDrawerToggle(this,mdl,R.string.open,R.string.close);
+        mdl = (DrawerLayout) findViewById(R.id.drawer_complain);
+        mToggle = new ActionBarDrawerToggle(this, mdl, R.string.open, R.string.close);
         mdl.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navView = (NavigationView)findViewById(R.id.navView_complain);
+        NavigationView navView = (NavigationView) findViewById(R.id.navView_complain);
         navView.setNavigationItemSelectedListener(this);
 
 
@@ -32,7 +32,7 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(mToggle.onOptionsItemSelected(item)){
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -40,7 +40,7 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.profile:
                 Intent in = new Intent(prod_complain.this, Profile.class);
@@ -48,14 +48,14 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.support:
                 Intent in = new Intent(this, Support.class);
                 startActivity(in);
                 return true;
         }
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.language:
                 Intent in = new Intent(this, LanguageActivity.class);
@@ -63,7 +63,7 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.faq:
                 Intent in = new Intent(this, prod_faq.class);
@@ -71,7 +71,7 @@ public class prod_complain extends AppCompatActivity implements NavigationView.O
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.enquiry:
                 Intent in = new Intent(this, Enquiry.class);

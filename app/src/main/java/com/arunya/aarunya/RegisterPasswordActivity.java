@@ -44,7 +44,7 @@ public class RegisterPasswordActivity extends AppCompatActivity {
 
     FirebaseAuth.AuthStateListener mAuthListener;
 
-    private final static int RC_SIGN_IN=2;
+    private final static int RC_SIGN_IN = 2;
 
 
     @Override
@@ -84,8 +84,8 @@ public class RegisterPasswordActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
-                if(firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(RegisterPasswordActivity.this,RegisterAsActivity.class));
+                if (firebaseAuth.getCurrentUser() != null) {
+                    startActivity(new Intent(RegisterPasswordActivity.this, RegisterAsActivity.class));
                 }
 
             }
@@ -109,9 +109,9 @@ public class RegisterPasswordActivity extends AppCompatActivity {
                 String pass = reg_pass_field.getText().toString();
                 String confirm_pass = reg_confirm_pass_field.getText().toString();
 
-                if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass) & !TextUtils.isEmpty(confirm_pass)){
+                if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass) & !TextUtils.isEmpty(confirm_pass)) {
 
-                    if(pass.equals(confirm_pass)){
+                    if (pass.equals(confirm_pass)) {
 
                         reg_progress.setVisibility(View.VISIBLE);
 
@@ -119,7 +119,7 @@ public class RegisterPasswordActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                                if(task.isSuccessful()){
+                                if (task.isSuccessful()) {
 
                                     Intent setupIntent = new Intent(RegisterPasswordActivity.this, RegisterAsActivity.class);
                                     startActivity(setupIntent);
@@ -169,7 +169,7 @@ public class RegisterPasswordActivity extends AppCompatActivity {
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
-                Toast.makeText(RegisterPasswordActivity.this, "Authentication Failed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterPasswordActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                 // ...
             }
         }
@@ -190,7 +190,7 @@ public class RegisterPasswordActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("TAG", "signInWithCredential:failure", task.getException());
-                            Toast.makeText(RegisterPasswordActivity.this, "Authentication Failed",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterPasswordActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
 

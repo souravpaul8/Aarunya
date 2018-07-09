@@ -12,16 +12,17 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:textSize="20sp"
+        android:text="Your Assignment has been Confirmed*"
         android:textColor="#000000"
-        android:text="Your Assignment has been Confirmed*"/>
+        android:textSize="20sp" />
+
     <TextView
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
-        android:textColor="#F44336"
-        android:text="*Reach The Producer within next 5 Hrs otherwise the order will be assigned to other transporter"/>
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="*Reach The Producer within next 5 Hrs otherwise the order will be assigned to other transporter"
+        android:textColor="#F44336" />
 
 </LinearLayout>

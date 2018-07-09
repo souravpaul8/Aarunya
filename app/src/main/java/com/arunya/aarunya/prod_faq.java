@@ -22,12 +22,12 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prod_faq);
-        mdl = (DrawerLayout)findViewById(R.id.drawer_faq);
-        mToggle = new ActionBarDrawerToggle(this,mdl,R.string.open,R.string.close);
+        mdl = (DrawerLayout) findViewById(R.id.drawer_faq);
+        mToggle = new ActionBarDrawerToggle(this, mdl, R.string.open, R.string.close);
         mdl.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navView = (NavigationView)findViewById(R.id.navView_faq);
+        NavigationView navView = (NavigationView) findViewById(R.id.navView_faq);
         navView.setNavigationItemSelectedListener(this);
 
     }
@@ -35,15 +35,16 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(mToggle.onOptionsItemSelected(item)){
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
-   public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
 
             case R.id.profile:
                 Intent in = new Intent(this, Profile.class);
@@ -51,14 +52,14 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.support:
                 Intent in = new Intent(this, Support.class);
                 startActivity(in);
                 return true;
         }
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.language:
                 Intent in = new Intent(this, LanguageActivity.class);
@@ -66,7 +67,7 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.faq:
                 Intent in = new Intent(this, prod_faq.class);
@@ -74,7 +75,7 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.enquiry:
                 Intent in = new Intent(this, Enquiry.class);
@@ -82,10 +83,10 @@ public class prod_faq extends AppCompatActivity implements NavigationView.OnNavi
                 return true;
 
         }
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
-                Intent in = new Intent(this,LoginActivity.class);
+                Intent in = new Intent(this, LoginActivity.class);
                 startActivity(in);
         }
 

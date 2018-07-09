@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="165dp"
     android:background="@color/green"
+    android:orientation="vertical"
     android:padding="20dp">
+
     <ImageView
-        android:src="@drawable/pro_pic"
         android:layout_width="75dp"
-        android:layout_height="75dp" />
+        android:layout_height="75dp"
+        android:src="@drawable/pro_pic" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="Producer"
-        android:textColor="@color/white"
-        android:layout_margin="5dp" />
+        android:textColor="@color/white" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="producer001@gmail.com"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 
 
 </LinearLayout>

@@ -16,8 +16,6 @@ import java.util.ArrayList;
 public class ConsumerBuyActivity extends AppCompatActivity {
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +23,9 @@ public class ConsumerBuyActivity extends AppCompatActivity {
 
 
         final ArrayList<Crops> crops = new ArrayList<Crops>();
-        Crops crop = new Crops("Wheat", "10 Kg", "Rs. 20/Kg","Chandigarh",R.drawable.wheat);
+        Crops crop = new Crops("Wheat", "10 Kg", "Rs. 20/Kg", "Chandigarh", R.drawable.wheat);
         crops.add(crop);
-        crops.add(new Crops("Rice", "20 Kg","Rs. 40/Kg","Dhanbad" ,R.drawable.rice));
+        crops.add(new Crops("Rice", "20 Kg", "Rs. 40/Kg", "Dhanbad", R.drawable.rice));
 
         CropsAdapter adapter = new CropsAdapter(this, crops);
         ListView listView = (ListView) findViewById(R.id.list);

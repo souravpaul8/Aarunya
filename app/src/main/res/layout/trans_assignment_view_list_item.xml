@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:gravity="center_horizontal"
-    android:layout_height="wrap_content">
-
+    android:orientation="vertical">
 
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         card_view:cardBackgroundColor="#E0F7FA"
-        card_view:cardCornerRadius="8dp"
-        >
+        card_view:cardCornerRadius="8dp">
 
         <LinearLayout
             android:id="@+id/text_container"
@@ -106,9 +104,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:text="1300km"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textStyle="bold"
-                    android:text="1300km" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -134,9 +132,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:text="24 hrs"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textStyle="bold"
-                    android:text="24 hrs" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -163,9 +161,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:text="Rs. 24800"
                     android:textAppearance="?android:textAppearanceMedium"
-                    android:textStyle="bold"
-                    android:text="Rs. 24800" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </LinearLayout>

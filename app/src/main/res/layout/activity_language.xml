@@ -2,36 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.arunya.aarunya.LanguageActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="320dp"
+        android:background="#2979FF"
         android:gravity="center"
-        android:textColor="#FFEBEE"
-        android:textSize="20sp"
         android:text="@string/select_language"
-        android:background="#2979FF"/>
+        android:textColor="#FFEBEE"
+        android:textSize="20sp" />
 
     <RadioGroup
-        android:orientation="vertical"
         android:id="@+id/radio_group_language"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
+        android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/english"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="English" />
+        <RadioButton
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="English" />
 
         <RadioButton
             android:id="@+id/hindi"
@@ -46,13 +45,13 @@
     </RadioGroup>
 
     <Button
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:id="@+id/next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:gravity="center"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Next" />
 
 </LinearLayout>

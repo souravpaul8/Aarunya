@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Enquiry extends AppCompatActivity {
 
     private Button enquirySubmit;
-     private EditText nameEdit,mailEdit,enquiryEdit;
+    private EditText nameEdit, mailEdit, enquiryEdit;
     private String userID;
 
     private FirebaseDatabase mFirebaseDatabase;
@@ -49,10 +49,9 @@ public class Enquiry extends AppCompatActivity {
                 String enquiry = enquiryEdit.getText().toString();
 
 
-
                 //handle the exception if the EditText fields are null
-                if(!name.equals("") && !mail.equals("") && !enquiry.equals("")){
-                    EnquiryInfo enquiryInfo = new EnquiryInfo(name,mail,enquiry);
+                if (!name.equals("") && !mail.equals("") && !enquiry.equals("")) {
+                    EnquiryInfo enquiryInfo = new EnquiryInfo(name, mail, enquiry);
                     myRef.child("Enquiry").child(userID).setValue(enquiryInfo);
                     Toast.makeText(Enquiry.this, "Your  Enquiry has been submitted", Toast.LENGTH_SHORT).show();
                     nameEdit.setText("");
@@ -60,9 +59,9 @@ public class Enquiry extends AppCompatActivity {
                     enquiryEdit.setText("");
 
 
-                    Intent Submit = new Intent(Enquiry.this,TransporterHomeActivity.class);
+                    Intent Submit = new Intent(Enquiry.this, TransporterHomeActivity.class);
                     startActivity(Submit);
-                }else{
+                } else {
                     Toast.makeText(Enquiry.this, "Fill out all the fields", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -14,74 +14,75 @@
         android:padding="8dp"
         tools:context="com.arunya.aarunya.MainActivity">
 
-        <TextView android:id="@+id/register_as_producer_consumer"
+        <TextView
+            android:id="@+id/register_as_producer_consumer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:layout_gravity="center"
             android:layout_marginTop="19dp"
-            android:text="@string/register_as_buyer" />
+            android:text="@string/register_as_buyer"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/name_text" />
+            android:text="@string/name_text"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/name_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="@string/name_edit"
+            android:inputType="textPersonName"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/dob_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/dob_text" />
+            android:text="@string/dob_text"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/dob_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:maxLength="10"
-            android:inputType="textPersonName"
             android:hint="@string/dob_edit"
+            android:inputType="textPersonName"
+            android:maxLength="10"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/state_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/state_text" />
+            android:text="@string/state_text"
+            android:textColor="#000000" />
 
         <Spinner
             android:id="@+id/state_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:spinnerMode="dialog"
-            android:prompt="@string/state_spinner"
             android:inputType="textPersonName"
+            android:prompt="@string/state_spinner"
+            android:spinnerMode="dialog"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/district_text"
             android:layout_width="wrap_content"
-            android:textColor="#000000"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
-            android:text="@string/district_text" />
+            android:text="@string/district_text"
+            android:textColor="#000000" />
 
 
         <Spinner
@@ -89,17 +90,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:spinnerMode="dialog"
             android:prompt="@string/district_spinner"
+            android:spinnerMode="dialog"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/address_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/address_text" />
+            android:text="@string/address_text"
+            android:textColor="#000000" />
 
 
         <EditText
@@ -107,36 +108,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="@string/address_edit"
+            android:inputType="textPersonName"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/phone_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/phone_text" />
+            android:text="@string/phone_text"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/phone_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/phone_edit"
             android:inputType="phone"
             android:maxLength="10"
-            android:hint="@string/phone_edit"
             android:textSize="16sp" />
 
 
         <TextView
             android:id="@+id/uid_text"
             android:layout_width="wrap_content"
-            android:paddingTop="16dp"
-            android:textColor="#000000"
             android:layout_height="wrap_content"
-            android:text="@string/uid_text" />
+            android:paddingTop="16dp"
+            android:text="@string/uid_text"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/uid_edit"
@@ -144,9 +145,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:ems="10"
-            android:maxLength="12"
-            android:inputType="phone"
             android:hint="@string/uid_edit"
+            android:inputType="phone"
+            android:maxLength="12"
             android:textSize="16sp" />
 
 
@@ -154,8 +155,8 @@
             android:id="@+id/submit_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:text="@string/submit_btn" />
 

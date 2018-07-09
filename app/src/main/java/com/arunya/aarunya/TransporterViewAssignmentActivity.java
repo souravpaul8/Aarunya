@@ -32,10 +32,10 @@ import java.util.List;
 
 public class TransporterViewAssignmentActivity extends AppCompatActivity {
 
-    Button routeBtn ,confirmBtn,contactBtn;
+    Button routeBtn, confirmBtn, contactBtn;
 
 
-    private static final String URL_DATA ="https://maps.googleapis.com/maps/api/directions/json?origin=Dhanbaed&destination=Mumbai";
+    private static final String URL_DATA = "https://maps.googleapis.com/maps/api/directions/json?origin=Dhanbaed&destination=Mumbai";
 
     private RecyclerView recyclerView;
     private TransporterAssignmentAdapter adapter;
@@ -91,49 +91,49 @@ public class TransporterViewAssignmentActivity extends AppCompatActivity {
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET,
                 URL_DATA,
-                new Response.Listener<String>(){
-                @Override
+                new Response.Listener<String>() {
+                    @Override
                     public void onResponse(String s) {
 
-                    try {
-                        JSONObject jsonObject = new JSONObject(s);
+                        try {
+                            JSONObject jsonObject = new JSONObject(s);
 
-                        JSONArray routesArray = jsonObject.getJSONArray("routes");
+                            JSONArray routesArray = jsonObject.getJSONArray("routes");
 
-                        JSONObject routesArrayElement1 = routesArray.getJSONObject(0);
+                            JSONObject routesArrayElement1 = routesArray.getJSONObject(0);
 
-                        JSONArray legsArray = routesArrayElement1.getJSONArray("legs");
-                        JSONObject legsArrayElement1 = legsArray.getJSONObject(0);
-
-
-                        JSONObject distance = legsArrayElement1.getJSONObject("distance");
-                        String distanceText = distance.getString("text");
-
-                        JSONObject duration = legsArrayElement1.getJSONObject("duration");
-                        String durationText = duration.getString("text");
-
-                        TransporterAssignmentDetail assignment = new TransporterAssignmentDetail("Dhanbad",
-                                "Mumbai", distanceText, durationText,
-                                "Rs. 24590");
-                        assignmentDetailList.add(assignment);
-
-                        adapter = new TransporterAssignmentAdapter(TransporterViewAssignmentActivity.this, assignmentDetailList);
-                        recyclerView.setAdapter(adapter);
+                            JSONArray legsArray = routesArrayElement1.getJSONArray("legs");
+                            JSONObject legsArrayElement1 = legsArray.getJSONObject(0);
 
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                            JSONObject distance = legsArrayElement1.getJSONObject("distance");
+                            String distanceText = distance.getString("text");
+
+                            JSONObject duration = legsArrayElement1.getJSONObject("duration");
+                            String durationText = duration.getString("text");
+
+                            TransporterAssignmentDetail assignment = new TransporterAssignmentDetail("Dhanbad",
+                                    "Mumbai", distanceText, durationText,
+                                    "Rs. 24590");
+                            assignmentDetailList.add(assignment);
+
+                            adapter = new TransporterAssignmentAdapter(TransporterViewAssignmentActivity.this, assignmentDetailList);
+                            recyclerView.setAdapter(adapter);
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                     }
 
-                }
-
                 },
-                    new Response.ErrorListener() {
+                new Response.ErrorListener() {
                     @Override
-                    public void onErrorResponse (VolleyError volleyError) {
-                        Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
+                    public void onErrorResponse(VolleyError volleyError) {
+                        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_LONG).show();
 
-                        }
+                    }
 
                 });
 

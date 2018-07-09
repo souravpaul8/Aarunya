@@ -18,12 +18,12 @@ import java.net.URL;
 
 public class weather extends AppCompatActivity {
 
-    class WeatherInfo extends AsyncTask<String, Void, String>{
+    class WeatherInfo extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... params) {
 
-            try{
+            try {
 
                 URL url = new URL(params[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -35,9 +35,9 @@ public class weather extends AppCompatActivity {
                 String apiDetails = "";
                 char current;
 
-                while(data != -1){
+                while (data != -1) {
 
-                    current = (char)data;
+                    current = (char) data;
                     apiDetails += current;
                     data = reader.read();
 
@@ -45,19 +45,18 @@ public class weather extends AppCompatActivity {
                 return apiDetails;
 
 
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             return null;
         }
     }
 
-    public void getWeatherInfo(View view){
+    public void getWeatherInfo(View view) {
 
         WeatherInfo weatherInfo = new WeatherInfo();
-        EditText cityEdit = (EditText)findViewById(R.id.cityName);
-        TextView weatherView = (TextView)findViewById(R.id.weatherTextView);
-
+        EditText cityEdit = (EditText) findViewById(R.id.cityName);
+        TextView weatherView = (TextView) findViewById(R.id.weatherTextView);
 
 
         try {
@@ -74,7 +73,7 @@ public class weather extends AppCompatActivity {
             String main = "";
             String description = "";
 
-            for(int i=0; i<array.length(); i++){
+            for (int i = 0; i < array.length(); i++) {
 
                 JSONObject arrayObject = array.getJSONObject(i);
                 main = arrayObject.getString("main");
@@ -82,10 +81,10 @@ public class weather extends AppCompatActivity {
             }
 
 
-           JSONObject weatherData = new JSONObject(jsonObject.getString("main"));
+            JSONObject weatherData = new JSONObject(jsonObject.getString("main"));
 
             double tempf = Double.parseDouble(weatherData.getString("temp"));
-            int temp = (int)(tempf-273.15);
+            int temp = (int) (tempf - 273.15);
             double pressure = Double.parseDouble(weatherData.getString("pressure"));
             double humidity = Double.parseDouble(weatherData.getString("humidity"));
 
@@ -95,26 +94,23 @@ public class weather extends AppCompatActivity {
             double latitude = Double.parseDouble(cord.getString("lat"));
 
 
-
-
-
             weatherView.setText("Main: " + main + "\n" +
                     "Description: " + description + "\n temp: " + temp +
-            "\n pressure: " + pressure + "\n humidity: " + humidity + "\n long: " + longitude + "\n lati: "+
-            latitude);
+                    "\n pressure: " + pressure + "\n humidity: " + humidity + "\n long: " + longitude + "\n lati: " +
+                    latitude);
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
 
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-
 
 
     }

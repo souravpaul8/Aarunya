@@ -12,20 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Confirm"/>
+        android:text="Confirm" />
 
     <Button
         android:id="@+id/route_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Route"/>
+        android:text="Route" />
 
     <Button
         android:id="@+id/contact_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Contact"/>
+        android:text="Contact" />
 
 </LinearLayout>

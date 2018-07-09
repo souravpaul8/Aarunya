@@ -102,7 +102,9 @@
             android:name=".consumer"
             android:label="Home" />
         <activity android:name=".PhoneVerification" />
-        <activity android:name=".FindTransporter"></activity>
+        <activity android:name=".FindTransporter" />
+        <activity android:name=".scan" />
+        <activity android:name=".Scanner"></activity>
     </application>
 
 </manifest>

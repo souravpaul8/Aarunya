@@ -13,13 +13,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_phone_verification);
 
-        DatabaseReference mdata= FirebaseDatabase.getInstance().getReference().child("current").child("type");
+        Intent i = new Intent(this, PhoneVerification.class);
+        startActivity(i);
 
-        String type=mdata.getKey().toString();
-        if(type.equals("producer"))
-        {
+
+        DatabaseReference mdata = FirebaseDatabase.getInstance().getReference().child("current").child("type");
+
+        String type = mdata.getKey().toString();
+        if (type.equals("producer")) {
             Intent intent = new Intent(this, producer.class);
             startActivity(intent);
         }

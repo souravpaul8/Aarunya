@@ -8,13 +8,13 @@ import android.webkit.WebViewClient;
 
 public class MandiRate extends AppCompatActivity {
     WebView webview;
-    String url="http://agmarknet.gov.in/";
+    String url = "http://agmarknet.gov.in/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mandi_rate);
-        webview=(WebView)findViewById(R.id.webview1);
+        webview = (WebView) findViewById(R.id.webview1);
         webview.setWebViewClient(new WebViewClient());
 
         webview.getSettings().getLoadsImagesAutomatically();

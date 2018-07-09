@@ -9,14 +9,14 @@ import android.widget.Button;
 
 public class TransporterChooseActionActivity extends AppCompatActivity {
 
-    Button routeBtn ,confirmBtn,contactBtn;
+    Button routeBtn, confirmBtn, contactBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transporter_choose_action);
 
-        routeBtn   = findViewById(R.id.route_btn);
+        routeBtn = findViewById(R.id.route_btn);
         confirmBtn = findViewById(R.id.confirm_btn);
         contactBtn = findViewById(R.id.contact_btn);
 
@@ -34,7 +34,7 @@ public class TransporterChooseActionActivity extends AppCompatActivity {
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TransporterChooseActionActivity.this,TransporterConfirmActivity.class);
+                Intent intent = new Intent(TransporterChooseActionActivity.this, TransporterConfirmActivity.class);
                 startActivity(intent);
 
             }
@@ -44,7 +44,7 @@ public class TransporterChooseActionActivity extends AppCompatActivity {
         contactBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TransporterChooseActionActivity.this,TransporterContactActivity.class);
+                Intent intent = new Intent(TransporterChooseActionActivity.this, TransporterContactActivity.class);
                 startActivity(intent);
 
             }

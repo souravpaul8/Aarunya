@@ -12,12 +12,12 @@ public class Crops {
     private String mDistrict;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    private static final int NO_IMAGE_PROVIDED= -1;
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
-     *Constructor
+     * Constructor
      */
-    public Crops (String crop,String quantity,String price,String district,int imageResourceId) {
+    public Crops(String crop, String quantity, String price, String district, int imageResourceId) {
 
         mCrop = crop;
         mQuantity = quantity;
@@ -66,7 +66,7 @@ public class Crops {
      * Get Image for the Crop
      **/
 
-    public int getImageResourceId()  {
+    public int getImageResourceId() {
 
         return mImageResourceId;
     }

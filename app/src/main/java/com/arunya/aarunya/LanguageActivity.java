@@ -44,8 +44,9 @@ public class LanguageActivity extends AppCompatActivity {
             }
         });
     }
-    public void openprodactivity(){
-        Intent in = new Intent(this,LoginActivity.class);
+
+    public void openprodactivity() {
+        Intent in = new Intent(this, LoginActivity.class);
         startActivity(in);
     }
 
@@ -88,10 +89,10 @@ public class LanguageActivity extends AppCompatActivity {
         RadioButton englishRadioButton = (RadioButton) findViewById(R.id.english);
         RadioButton hindiRadioButton = (RadioButton) findViewById(R.id.hindi);
 
-        if(englishRadioButton.isChecked())
+        if (englishRadioButton.isChecked())
             saveLanguage("en");
 
-        else if(hindiRadioButton.isChecked())
+        else if (hindiRadioButton.isChecked())
             saveLanguage("hi");
         return true;
     }

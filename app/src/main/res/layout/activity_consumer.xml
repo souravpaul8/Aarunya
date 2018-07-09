@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.arunya.aarunya.consumer">
+
     <Button
         android:id="@+id/sell"
         android:layout_width="300dp"
@@ -29,7 +30,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/colorAccent"
         android:text="farmingnews"
-        android:textColor="@android:color/background_light"/>
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/weather"
@@ -41,9 +42,9 @@
         android:layout_marginTop="22dp"
         android:background="@color/colorAccent"
         android:text="weather"
+        android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="59dp"
-        android:textColor="@android:color/background_light"/>
+        tools:layout_editor_absoluteY="59dp" />
 
     <Button
         android:id="@+id/offers"
@@ -55,9 +56,9 @@
         android:layout_marginTop="22dp"
         android:background="@color/colorAccent"
         android:text="govtoffers"
+        android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="59dp"
-        android:textColor="@android:color/background_light" />
+        tools:layout_editor_absoluteY="59dp" />
 
     <Button
         android:id="@+id/mandirate"
@@ -69,9 +70,9 @@
         android:layout_marginTop="17dp"
         android:background="@color/colorAccent"
         android:text="mandi"
+        android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="120dp"
-        android:textColor="@android:color/background_light"/>
+        tools:layout_editor_absoluteY="120dp" />
 
     <Button
         android:id="@+id/employment"
@@ -83,7 +84,7 @@
         android:layout_marginTop="26dp"
         android:background="@color/colorAccent"
         android:text="employment"
-        android:textColor="@android:color/background_light"/>
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/faq"
@@ -113,7 +114,7 @@
             android:layout_weight="1"
             android:background="@color/colorAccent"
             android:text="enquiry"
-            android:textColor="@android:color/background_light"/>
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/complain"
@@ -127,7 +128,6 @@
             android:text="complain"
             android:textColor="@android:color/background_light" />
     </LinearLayout>
-
 
 
 </RelativeLayout>

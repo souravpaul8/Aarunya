@@ -6,7 +6,7 @@ import android.webkit.WebView;
 
 public class Government_schemes extends AppCompatActivity {
     WebView webview;
-    String url="http://";
+    String url = "http://";
 
 
     @Override

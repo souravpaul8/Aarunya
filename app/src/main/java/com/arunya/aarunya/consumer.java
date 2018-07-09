@@ -11,15 +11,16 @@ public class consumer extends AppCompatActivity {
     Button btn_buy;
     Button back1;
     Button openNews;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consumer);
-        openNews=(Button)findViewById(R.id.news);
+        openNews = (Button) findViewById(R.id.news);
         openNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(consumer.this,news.class);
+                Intent i = new Intent(consumer.this, news.class);
                 startActivity(i);
             }
         });
@@ -31,7 +32,7 @@ public class consumer extends AppCompatActivity {
                 startActivity(i);
             }
         });*/
-        btn_buy=(Button) findViewById(R.id.sell);
+        btn_buy = (Button) findViewById(R.id.sell);
         btn_buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +40,9 @@ public class consumer extends AppCompatActivity {
             }
         });
     }
-    public void opensellactivity(){
-         Intent in = new Intent(this,ConsumerBuyActivity.class);
+
+    public void opensellactivity() {
+        Intent in = new Intent(this, ConsumerBuyActivity.class);
         startActivity(in);
     }
 

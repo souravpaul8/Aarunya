@@ -15,24 +15,25 @@
         tools:context="com.arunya.aarunya.MainActivity">
 
         <ImageView
-            android:src="@drawable/pro_pic"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:src="@drawable/pro_pic" />
+
         <Button
+            android:id="@+id/edit_image_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edit Image"
             android:layout_gravity="center"
-            android:id="@+id/edit_image_btn"/>
+            android:text="Edit Image" />
 
         <TextView
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/name_text" />
+            android:text="@string/name_text"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/name_edit"
@@ -46,9 +47,9 @@
             android:id="@+id/dob_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/dob_text" />
+            android:text="@string/dob_text"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/dob_edit"
@@ -62,9 +63,9 @@
             android:id="@+id/state_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/state_text" />
+            android:text="@string/state_text"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/state_edit"
@@ -77,10 +78,10 @@
         <TextView
             android:id="@+id/district_text"
             android:layout_width="wrap_content"
-            android:textColor="#000000"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
-            android:text="@string/district_text" />
+            android:text="@string/district_text"
+            android:textColor="#000000" />
 
 
         <TextView
@@ -88,16 +89,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textSize="16sp"
-            android:hint="District"/>
+            android:hint="District"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/address_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/address_text" />
+            android:text="@string/address_text"
+            android:textColor="#000000" />
 
 
         <TextView
@@ -112,9 +113,9 @@
             android:id="@+id/phone_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
             android:paddingTop="16dp"
-            android:text="@string/phone_text" />
+            android:text="@string/phone_text"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/phone_edit"
@@ -128,10 +129,10 @@
         <TextView
             android:id="@+id/uid_text"
             android:layout_width="wrap_content"
-            android:paddingTop="16dp"
-            android:textColor="#000000"
             android:layout_height="wrap_content"
-            android:text="@string/uid_text" />
+            android:paddingTop="16dp"
+            android:text="@string/uid_text"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/uid_edit"
@@ -147,8 +148,8 @@
             android:id="@+id/submit_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:text="@string/submit_btn" />
 

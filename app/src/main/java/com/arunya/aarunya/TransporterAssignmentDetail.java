@@ -14,9 +14,9 @@ public class TransporterAssignmentDetail {
 
 
     /**
-     *Constructor
+     * Constructor
      */
-    public TransporterAssignmentDetail (String from,String to,String distance,String duration, String fullPayment) {
+    public TransporterAssignmentDetail(String from, String to, String distance, String duration, String fullPayment) {
 
         mFrom = from;
         mTo = to;
@@ -67,6 +67,6 @@ public class TransporterAssignmentDetail {
 
     public String getFullPayment() {
 
-       return mFullPayment;
+        return mFullPayment;
     }
 }

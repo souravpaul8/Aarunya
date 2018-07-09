@@ -14,10 +14,10 @@ public class FindTransporter extends AppCompatActivity {
         setContentView(R.layout.find_transport_list);
 
         final ArrayList<FindTransporterInfo> findTransporterInfos = new ArrayList<FindTransporterInfo>();
-        FindTransporterInfo transporter = new FindTransporterInfo("Satpal Singh", "Normal Truck", "100 Quintal","Panipat" , "HR-06-BH-3245");
+        FindTransporterInfo transporter = new FindTransporterInfo("Satpal Singh", "Normal Truck", "100 Quintal", "Panipat", "HR-06-BH-3245");
         findTransporterInfos.add(transporter);
-        findTransporterInfos.add(new FindTransporterInfo("Sushil Sharma", "Refrigerated Truck","1000 Kg","Nagpur","MH-31-CX-1236"));
-        findTransporterInfos.add(new FindTransporterInfo("Keerthi Kumar", "Normal Truck","500 Kg","Chennai","TN-09-DE-5423"));
+        findTransporterInfos.add(new FindTransporterInfo("Sushil Sharma", "Refrigerated Truck", "1000 Kg", "Nagpur", "MH-31-CX-1236"));
+        findTransporterInfos.add(new FindTransporterInfo("Keerthi Kumar", "Normal Truck", "500 Kg", "Chennai", "TN-09-DE-5423"));
 
 
         FindTransporterAdapter adapter = new FindTransporterAdapter(this, findTransporterInfos);

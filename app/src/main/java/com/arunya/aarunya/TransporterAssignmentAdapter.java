@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
 import java.util.List;
 
 
@@ -31,7 +32,7 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
     @Override
     public AssignmentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.trans_assignment_view_list_item,null);
+        View view = inflater.inflate(R.layout.trans_assignment_view_list_item, null);
         AssignmentViewHolder holder = new AssignmentViewHolder(view);
         return holder;
     }
@@ -40,7 +41,7 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
     @Override
     public void onBindViewHolder(AssignmentViewHolder holder, int position) {
 
-        TransporterAssignmentDetail assignmentView =assignmentList.get(position);
+        TransporterAssignmentDetail assignmentView = assignmentList.get(position);
 
         holder.fromTextView.setText(assignmentView.getFrom());
         holder.toTextView.setText(assignmentView.getTo());
@@ -50,8 +51,8 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
         holder.listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(mCtx, TransporterChooseActionActivity.class);
-                mCtx. startActivity(intent);
+                Intent intent = new Intent(mCtx, TransporterChooseActionActivity.class);
+                mCtx.startActivity(intent);
 
             }
         });
@@ -65,18 +66,18 @@ public class TransporterAssignmentAdapter extends RecyclerView.Adapter<Transport
 
     class AssignmentViewHolder extends RecyclerView.ViewHolder {
 
-        TextView fromTextView,toTextView,distanceTextView,fullPaymentTextView,durationTextView;
+        TextView fromTextView, toTextView, distanceTextView, fullPaymentTextView, durationTextView;
         public View listItemView;
 
         public AssignmentViewHolder(View listItemView) {
-             super(listItemView);
-             this.listItemView = listItemView;
-              fromTextView = listItemView.findViewById(R.id.from_place);
-              toTextView = listItemView.findViewById(R.id.to_place);
-            distanceTextView =listItemView.findViewById(R.id.distance_in_number);
+            super(listItemView);
+            this.listItemView = listItemView;
+            fromTextView = listItemView.findViewById(R.id.from_place);
+            toTextView = listItemView.findViewById(R.id.to_place);
+            distanceTextView = listItemView.findViewById(R.id.distance_in_number);
             durationTextView = listItemView.findViewById(R.id.estimated_time_in_number);
             fullPaymentTextView = listItemView.findViewById(R.id.total_payment_in_number);
         }
-     }
+    }
 
 }

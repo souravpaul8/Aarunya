@@ -24,7 +24,7 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
     private static final String TAG = "AddToDatabase";
 
     private Button btnSubmit;
-    private EditText mLicenseNumber,mVehicleRegistration,mPricePerKm,mVehicleCapacity,mName,mDob, mAddress,mAadhaar,mPhoneNum;
+    private EditText mLicenseNumber, mVehicleRegistration, mPricePerKm, mVehicleCapacity, mName, mDob, mAddress, mAadhaar, mPhoneNum;
     //private Spinner mVehicleType,mCapacityInUnit,mState,mDistrict;
     private String userID;
 
@@ -124,20 +124,20 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                                 //"District: " + district + "\n" +
                                 //"State: " + state + "\n" +
                                 "Aadhaar Number: " + Aadhaar + "\n" +
-                                "Phone number: " + PhoneNum + "\n"+
-                        "License Number: " + LicenseNumber + "\n" +
-                        "Vehicle Registration Number: " + VehicleRegistration + "\n" +
-                        "Vehicle Capacity: " + VehicleCapacity + "\n" +
-                        "Price per Km: " + PricePerKm + "\n"
+                                "Phone number: " + PhoneNum + "\n" +
+                                "License Number: " + LicenseNumber + "\n" +
+                                "Vehicle Registration Number: " + VehicleRegistration + "\n" +
+                                "Vehicle Capacity: " + VehicleCapacity + "\n" +
+                                "Price per Km: " + PricePerKm + "\n"
                         //"Capacity in Unit: " + CapacityInUnit + "\n" +
                         //"Vehicle Type: " + VehicleType + "\n"
                 );
 
                 //handle the exception if the EditText fields are null
-                if(!LicenseNumber.equals("") && !VehicleRegistration.equals("") && !VehicleCapacity.equals("")
-                        && !PricePerKm.equals("")){
-                    TransporterExtraInfo transporterExtraInfo = new TransporterExtraInfo(Name,DOB,Address,
-                            PhoneNum, Aadhaar,RegisterAs,LicenseNumber,VehicleRegistration, VehicleCapacity,
+                if (!LicenseNumber.equals("") && !VehicleRegistration.equals("") && !VehicleCapacity.equals("")
+                        && !PricePerKm.equals("")) {
+                    TransporterExtraInfo transporterExtraInfo = new TransporterExtraInfo(Name, DOB, Address,
+                            PhoneNum, Aadhaar, RegisterAs, LicenseNumber, VehicleRegistration, VehicleCapacity,
                             PricePerKm);
                     myRef.child("Users").child("Transporter").child(userID).setValue(transporterExtraInfo);
                     toastMessage("New Information has been saved.");
@@ -152,10 +152,10 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
                     mPricePerKm.setText("");
 
 
-                        Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, TransporterHomeActivity.class);
-                        startActivity(afterSubmit);
+                    Intent afterSubmit = new Intent(NewRegistrationTransporterActivity.this, TransporterHomeActivity.class);
+                    startActivity(afterSubmit);
 
-                }else{
+                } else {
                     toastMessage("Fill out all the fields");
                 }
             }
@@ -181,10 +181,11 @@ public class NewRegistrationTransporterActivity extends AppCompatActivity {
 
     /**
      * customizable toast
+     *
      * @param message
      */
-    private void toastMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 }

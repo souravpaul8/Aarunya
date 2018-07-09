@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
 
-    private final static int RC_SIGN_IN=1;
+    private final static int RC_SIGN_IN = 1;
 
     private ProgressBar loginProgress;
 
@@ -91,8 +91,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
-                if(firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(LoginActivity.this,producer.class));
+                if (firebaseAuth.getCurrentUser() != null) {
+                    startActivity(new Intent(LoginActivity.this, producer.class));
                 }
 
             }
@@ -117,14 +117,14 @@ public class LoginActivity extends AppCompatActivity {
                 String loginEmail = loginEmailText.getText().toString();
                 String loginPass = loginPassText.getText().toString();
 
-                if(!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginPass)){
+                if (!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginPass)) {
                     loginProgress.setVisibility(View.VISIBLE);
 
                     mAuth.signInWithEmailAndPassword(loginEmail, loginPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
-                            if(task.isSuccessful()){
+                            if (task.isSuccessful()) {
 
                                 sendToMain();
 
@@ -168,7 +168,7 @@ public class LoginActivity extends AppCompatActivity {
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
-                Toast.makeText(LoginActivity.this, "Authentication Failed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                 // ...
             }
         }
@@ -189,7 +189,7 @@ public class LoginActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("TAG", "signInWithCredential:failure", task.getException());
-                            Toast.makeText(LoginActivity.this, "Authentication Failed",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
 
@@ -229,13 +229,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        if(register.equalsIgnoreCase("Producer"))
-            startActivity(new Intent(this,producer.class));
+        if (register.equalsIgnoreCase("Producer"))
+            startActivity(new Intent(this, producer.class));
 
-        else if(register.equalsIgnoreCase("Consumer"))
-            startActivity(new Intent(this,consumer.class));
+        else if (register.equalsIgnoreCase("Consumer"))
+            startActivity(new Intent(this, consumer.class));
         else
-            startActivity(new Intent(this,TransporterHomeActivity.class));
+            startActivity(new Intent(this, TransporterHomeActivity.class));
 
         /*
         Intent mainIntent = new Intent(LoginActivity.this, LanguageActivity.class);

@@ -9,14 +9,14 @@ import android.webkit.WebViewClient;
 public class TransporterNewsActivity extends AppCompatActivity {
 
     WebView webview;
-    String url="http://hindi.krishijagran.com";
+    String url = "http://hindi.krishijagran.com";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transporter_news);
-        webview=(WebView)findViewById(R.id.webview1);
+        webview = (WebView) findViewById(R.id.webview1);
         webview.setWebViewClient(new WebViewClient());
 
         webview.getSettings().getLoadsImagesAutomatically();
